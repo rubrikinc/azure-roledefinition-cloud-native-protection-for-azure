@@ -1,3 +1,3 @@
-# Quick Start Guide: CloudFormation Templates - Cloud-Native Protection for AWS 
+# Quick Start Guide: Role Definition - Cloud-Native Protection for Azure 
 
-These templates are for reference purposes only and are not intended for out side of Cloud-Native Protection for AWS on Rubrik Polaris. 
+These templates are for reference purposes only and are not intended for use outside of Cloud-Native Protection for Azure on Rubrik Polaris. 

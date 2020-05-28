@@ -1,12 +1,12 @@
-# Cloud-Native Protection for Azure 
+# Role Definition - Cloud-Native Protection for Azure
 
-# Azure Role Definition
+# Azure Role Definition: Native Protection
 
-This repository contains CloudFormation Templates designed to help complete the AWS configuration process required for Rubrik Polaris to protect cloud native applications in Amazon Web Services. These templates are not intended for use outside of Rubrik Polaris.
+This repository contains the custom role definition that is associated with the Polaris service principal when protecting customer subscriptions in Azure using Rubrik Polaris. This role definition is not intended for use outside of Rubrik Polaris.
 
 # :blue_book: Documentation 
 
-Here are some resources to get you started! If you find any challenges from this project are not properly documented or are unclear, please [raise an issue](https://github.com/rubrikinc/azure-roledefinition-cloud-native-protection-for-azure/issues/new/choose) and let us know! This is a fun, safe environment - don't worry if you're a GitHub newbie! :heart:
+Here are some resources to get you started! If you find any challenges from this project are not properly documented or are unclear, please [raise an issue](https://github.com/rubrikinc/use-case-aws-cloudformation-templates-native-protection/issues/new/choose) and let us know! This is a fun, safe environment - don't worry if you're a GitHub newbie! :heart:
 
 * [Quick Start Guide](/docs/quick-start.md)
 
@@ -14,7 +14,7 @@ Here are some resources to get you started! If you find any challenges from this
 
 There are a few services you'll need in order to get this project off the ground:
 
-* Azure
+* AWS CloudFormation - this service allows you to configure cloud native protection via a template
 * Rubrik Polaris - the platform that protects provisioned workloads
 
 # :muscle: How You Can Help

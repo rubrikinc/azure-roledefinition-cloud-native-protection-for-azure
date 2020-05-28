@@ -1,3 +1,3 @@
-# Quick Start Guide: Role Definition - Cloud-Native Protection for Azure 
+# Quick Start Guide: Role Definition - Cloud-Native Protection for Azure
 
-These templates are for reference purposes only and are not intended for use outside of Cloud-Native Protection for Azure on Rubrik Polaris. 
+This role definition is for reference purposes only and is not intended for out side of Cloud-Native Protection for Azure on Rubrik Polaris. 

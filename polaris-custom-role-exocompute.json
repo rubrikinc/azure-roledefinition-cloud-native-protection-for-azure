@@ -1,0 +1,27 @@
+{
+  "id": "/subscriptions/abcdefgh-1234-abcd-1234-abcdefghijkl/providers/Microsoft.Authorization/roleDefinitions/01234567-abcd-1234-abcd-123456789012",
+  "properties": {
+    "roleName": "Rubrik Polaris EXOCOMPUTE - 01234567-abcd-1234-abcd-123456789012",
+    "description": "Rubrik Polaris role for EXOCOMPUTE",
+    "assignableScopes": [
+      "/subscriptions/abcdefgh-1234-abcd-1234-abcdefghijkl"
+    ],
+    "permissions": [
+      {
+        "actions": [
+          "Microsoft.Containerservice/managedClusters/*",
+          "Microsoft.ContainerService/register/action",
+          "Microsoft.ContainerRegistry/register/action",
+          "Microsoft.ContainerRegistry/registries/importImage/action",
+          "Microsoft.ContainerRegistry/registries/pull/read",
+          "Microsoft.ContainerRegistry/registries/read",
+          "Microsoft.Network/virtualNetworks/subnets/join/action",
+          "Microsoft.Network/virtualNetworks/subnets/read"
+        ],
+        "notActions": [],
+        "dataActions": [],
+        "notDataActions": []
+      }
+    ]
+  }
+}

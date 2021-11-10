@@ -50,7 +50,9 @@
           "Microsoft.Storage/storageAccounts/blobServices/containers/read",
           "Microsoft.Storage/storageAccounts/blobServices/containers/write",
           "Microsoft.Storage/storageAccounts/blobServices/containers/delete",
-          "Microsoft.Compute/availabilitySets/read"
+          "Microsoft.Compute/availabilitySets/read",
+          "Microsoft.Storage/storageAccounts/read",
+          "Microsoft.Compute/diskEncryptionSets/read"
         ],
         "notActions": [],
         "dataActions": [

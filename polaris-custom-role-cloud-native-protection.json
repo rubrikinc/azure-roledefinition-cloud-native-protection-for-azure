@@ -52,7 +52,9 @@
           "Microsoft.Storage/storageAccounts/blobServices/containers/delete",
           "Microsoft.Compute/availabilitySets/read",
           "Microsoft.Storage/storageAccounts/read",
-          "Microsoft.Compute/diskEncryptionSets/read"
+          "Microsoft.Compute/diskEncryptionSets/read",
+          "Microsoft.Compute/galleries/images/versions/read",
+          "Microsoft.Storage/storageAccounts/listkeys/action"
         ],
         "notActions": [],
         "dataActions": [

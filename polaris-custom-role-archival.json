@@ -1,0 +1,40 @@
+{
+  "id": "/subscriptions/abcdefgh-1234-abcd-1234-abcdefghijkl/providers/Microsoft.Authorization/roleDefinitions/01234567-abcd-1234-abcd-123456789012",
+  "properties": {
+    "roleName": "Rubrik Polaris ARCHIVAL - 01234567-abcd-1234-abcd-123456789012",
+    "description": "Rubrik Polaris role for ARCHIVAL",
+    "assignableScopes": [
+      "/subscriptions/abcdefgh-1234-abcd-1234-abcdefghijkl"
+    ],
+    "permissions": [
+      {
+        "actions": [
+          "Microsoft.Storage/storageAccounts/read",
+          "Microsoft.Storage/storageAccounts/write",
+          "Microsoft.Storage/storageAccounts/listkeys/action",
+          "Microsoft.Storage/storageAccounts/listServiceSas/action",
+          "Microsoft.Storage/storageAccounts/blobServices/containers/read",
+          "Microsoft.Storage/storageAccounts/blobServices/containers/write",
+          "Microsoft.Storage/storageAccounts/blobServices/containers/delete",
+          "Microsoft.Resources/subscriptions/resourceGroups/read",
+          "Microsoft.Resources/subscriptions/resourceGroups/write",
+          "Microsoft.ManagedIdentity/userAssignedIdentities/assign/action",
+          "Microsoft.Storage/storageAccounts/encryptionScopes/read",
+          "Microsoft.Storage/storageAccounts/encryptionScopes/write",
+          "Microsoft.KeyVault/vaults/read",
+          "Microsoft.KeyVault/vaults/keys/read",
+          "Microsoft.Storage/storageAccounts/blobServices/read",
+          "Microsoft.Storage/storageAccounts/blobServices/write"
+        ],
+        "notActions": [],
+        "dataActions": [
+          "Microsoft.Storage/storageAccounts/blobServices/containers/blobs/immutableStorage/runAsSuperUser/action",
+          "Microsoft.Storage/storageAccounts/blobServices/containers/blobs/delete",
+          "Microsoft.Storage/storageAccounts/blobServices/containers/blobs/write",
+          "Microsoft.Storage/storageAccounts/blobServices/containers/blobs/read"
+        ],
+        "notDataActions": []
+      }
+    ]
+  }
+}

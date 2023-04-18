@@ -1,0 +1,22 @@
+{
+  "id": "/subscriptions/abcdefgh-1234-abcd-1234-abcdefghijkl/providers/Microsoft.Authorization/roleDefinitions/01234567-abcd-1234-abcd-123456789012",
+  "properties": {
+    "roleName": "Rubrik Polaris ARCHIVAL ENCRYPTION - 01234567-abcd-1234-abcd-123456789012",
+    "description": "Rubrik Polaris role for ARCHIVAL ENCRYPTION",
+    "assignableScopes": [
+      "/subscriptions/abcdefgh-1234-abcd-1234-abcdefghijkl"
+    ],
+    "permissions": [
+      {
+        "actions": [
+          "Microsoft.KeyVault/vaults/keys/unwrap/action",
+          "Microsoft.KeyVault/vaults/keys/wrap/action",
+          "Microsoft.KeyVault/vaults/keys/read"
+        ],
+        "notActions": [],
+        "dataActions": [],
+        "notDataActions": []
+      }
+    ]
+  }
+}

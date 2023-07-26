@@ -1,0 +1,30 @@
+[
+  {
+    "Actions": [
+      {
+        "value": "Microsoft.Storage/storageAccounts/write",
+        "scope": "subscription"
+      },
+      {
+        "value": "Microsoft.Storage/storageAccounts/blobServices/containers/write",
+        "scope": "subscription"
+      },
+      {
+        "value": "Microsoft.Storage/storageAccounts/blobServices/containers/delete",
+        "scope": "subscription"
+      }
+    ],
+    "NotActions": null,
+    "DataActions": [
+      {
+        "value": "Microsoft.Storage/storageAccounts/blobServices/containers/blobs/write",
+        "scope": "subscription"
+      },
+      {
+        "value": "Microsoft.Storage/storageAccounts/blobServices/containers/blobs/delete",
+        "scope": "subscription"
+      }
+    ],
+    "NotDataActions": null
+  }
+]

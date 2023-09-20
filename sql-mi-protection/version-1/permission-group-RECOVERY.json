@@ -1,0 +1,14 @@
+[
+  {
+    "Actions": [
+      {
+        "value": "Microsoft.Sql/managedInstances/databases/write",
+        "use_case": "Creating a database or updating an existing database.",
+        "scope": "subscription"
+      }
+    ],
+    "NotActions": null,
+    "DataActions": null,
+    "NotDataActions": null
+  }
+]

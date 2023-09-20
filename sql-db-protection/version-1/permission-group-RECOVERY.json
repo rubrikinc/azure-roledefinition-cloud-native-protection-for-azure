@@ -1,0 +1,14 @@
+[
+  {
+    "Actions": [
+      {
+        "value": "Microsoft.Sql/servers/databases/write",
+        "use_case": "Creating a database with the specified parameters or updating the properties or tags for the specified database.",
+        "scope": "subscription"
+      }
+    ],
+    "NotActions": null,
+    "DataActions": null,
+    "NotDataActions": null
+  }
+]

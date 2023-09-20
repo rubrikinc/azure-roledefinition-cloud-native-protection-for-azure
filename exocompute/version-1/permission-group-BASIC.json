@@ -1,0 +1,254 @@
+[
+  {
+    "Actions": [
+      {
+        "value": "Microsoft.Network/virtualNetworks/subnets/join/action",
+        "use_case": "Creating a virtual machine in a subnet during the Export virtual machine task.",
+        "scope": "subscription"
+      },
+      {
+        "value": "Microsoft.Network/virtualNetworks/subnets/read",
+        "use_case": "Retrieving the details of virtual network subnets during the Export virtual machine task.",
+        "scope": "subscription"
+      },
+      {
+        "value": "Microsoft.Network/virtualNetworks/read",
+        "use_case": "Retrieving the Azure Virtual Network (VNet) details during the Export virtual machine task.",
+        "scope": "subscription"
+      },
+      {
+        "value": "Microsoft.ContainerService/register/action",
+        "use_case": "Registering a subscription with Microsoft.ContainerService resource provider.",
+        "scope": "resourceGroup"
+      },
+      {
+        "value": "Microsoft.ContainerRegistry/register/action",
+        "use_case": "Registering a subscription with Microsoft.ContainerRegistry resource provider.",
+        "scope": "resourceGroup"
+      },
+      {
+        "value": "Microsoft.ContainerRegistry/registries/importImage/action",
+        "use_case": "Importing an image to the container registry",
+        "scope": "resourceGroup"
+      },
+      {
+        "value": "Microsoft.ContainerRegistry/registries/pull/read",
+        "use_case": "Pulling images.",
+        "scope": "resourceGroup"
+      },
+      {
+        "value": "Microsoft.ContainerRegistry/registries/read",
+        "use_case": "Reading registries.",
+        "scope": "resourceGroup"
+      },
+      {
+        "value": "Microsoft.Resources/subscriptions/resourceGroups/read",
+        "use_case": "Performing refresh tasks.",
+        "scope": "resourceGroup"
+      },
+      {
+        "value": "Microsoft.Resources/subscriptions/resourceGroups/write",
+        "use_case": "Creating a separate resource group to store snapshots taken by Polaris.",
+        "scope": "resourceGroup"
+      },
+      {
+        "value": "Microsoft.ContainerService/managedClusters/read",
+        "use_case": "Performing Create Read Update and Delete (CRUD) operations on an Exocompute instance.",
+        "scope": "resourceGroup"
+      },
+      {
+        "value": "Microsoft.ContainerService/managedClusters/write",
+        "use_case": "Performing Create Read Update and Delete (CRUD) operations on an Exocompute instance.",
+        "scope": "resourceGroup"
+      },
+      {
+        "value": "Microsoft.ContainerService/managedClusters/delete",
+        "use_case": "Performing Create Read Update and Delete (CRUD) operations on an Exocompute instance.",
+        "scope": "resourceGroup"
+      },
+      {
+        "value": "Microsoft.ContainerService/managedClusters/start/action",
+        "use_case": "Performing Create Read Update and Delete (CRUD) operations on an Exocompute instance.",
+        "scope": "resourceGroup"
+      },
+      {
+        "value": "Microsoft.ContainerService/managedClusters/stop/action",
+        "use_case": "Performing Create Read Update and Delete (CRUD) operations on an Exocompute instance.",
+        "scope": "resourceGroup"
+      },
+      {
+        "value": "Microsoft.ContainerService/managedClusters/abort/action",
+        "use_case": "Performing Create Read Update and Delete (CRUD) operations on an Exocompute instance.",
+        "scope": "resourceGroup"
+      },
+      {
+        "value": "Microsoft.ContainerService/managedClusters/listClusterAdminCredential/action",
+        "use_case": "Performing Create Read Update and Delete (CRUD) operations on an Exocompute instance.",
+        "scope": "resourceGroup"
+      },
+      {
+        "value": "Microsoft.ContainerService/managedClusters/listClusterUserCredential/action",
+        "use_case": "Performing Create Read Update and Delete (CRUD) operations on an Exocompute instance.",
+        "scope": "resourceGroup"
+      },
+      {
+        "value": "Microsoft.ContainerService/managedClusters/listClusterMonitoringUserCredential/action",
+        "use_case": "Performing Create Read Update and Delete (CRUD) operations on an Exocompute instance.",
+        "scope": "resourceGroup"
+      },
+      {
+        "value": "Microsoft.ContainerService/managedClusters/resolvePrivateLinkServiceId/action",
+        "use_case": "Performing Create Read Update and Delete (CRUD) operations on an Exocompute instance.",
+        "scope": "resourceGroup"
+      },
+      {
+        "value": "Microsoft.ContainerService/managedClusters/privateEndpointConnectionsApproval/action",
+        "use_case": "Performing Create Read Update and Delete (CRUD) operations on an Exocompute instance.",
+        "scope": "resourceGroup"
+      },
+      {
+        "value": "Microsoft.ContainerService/managedClusters/agentPools/read",
+        "use_case": "Performing Create Read Update and Delete (CRUD) operations on an Exocompute instance.",
+        "scope": "resourceGroup"
+      },
+      {
+        "value": "Microsoft.ContainerService/managedClusters/agentPools/write",
+        "use_case": "Performing Create Read Update and Delete (CRUD) operations on an Exocompute instance.",
+        "scope": "resourceGroup"
+      },
+      {
+        "value": "Microsoft.ContainerService/managedClusters/agentPools/delete",
+        "use_case": "Performing Create Read Update and Delete (CRUD) operations on an Exocompute instance.",
+        "scope": "resourceGroup"
+      },
+      {
+        "value": "Microsoft.ContainerService/managedClusters/agentPools/abort/action",
+        "use_case": "Performing Create Read Update and Delete (CRUD) operations on an Exocompute instance.",
+        "scope": "resourceGroup"
+      },
+      {
+        "value": "Microsoft.ContainerService/managedClusters/agentPools/upgradeNodeImageVersion/write",
+        "use_case": "Performing Create Read Update and Delete (CRUD) operations on an Exocompute instance.",
+        "scope": "resourceGroup"
+      },
+      {
+        "value": "Microsoft.ContainerService/managedClusters/agentPools/upgradeProfiles/read",
+        "use_case": "Performing Create Read Update and Delete (CRUD) operations on an Exocompute instance.",
+        "scope": "resourceGroup"
+      },
+      {
+        "value": "Microsoft.ContainerService/managedClusters/diagnosticsState/read",
+        "use_case": "Performing Create Read Update and Delete (CRUD) operations on an Exocompute instance.",
+        "scope": "resourceGroup"
+      },
+      {
+        "value": "Microsoft.ContainerService/managedClusters/extensionaddons/read",
+        "use_case": "Performing Create Read Update and Delete (CRUD) operations on an Exocompute instance.",
+        "scope": "resourceGroup"
+      },
+      {
+        "value": "Microsoft.ContainerService/managedClusters/extensionaddons/write",
+        "use_case": "Performing Create Read Update and Delete (CRUD) operations on an Exocompute instance.",
+        "scope": "resourceGroup"
+      },
+      {
+        "value": "Microsoft.ContainerService/managedClusters/extensionaddons/delete",
+        "use_case": "Performing Create Read Update and Delete (CRUD) operations on an Exocompute instance.",
+        "scope": "resourceGroup"
+      },
+      {
+        "value": "Microsoft.ContainerService/managedClusters/detectors/read",
+        "use_case": "Performing Create Read Update and Delete (CRUD) operations on an Exocompute instance.",
+        "scope": "resourceGroup"
+      },
+      {
+        "value": "Microsoft.ContainerService/managedClusters/accessProfiles/read",
+        "use_case": "Performing Create Read Update and Delete (CRUD) operations on an Exocompute instance.",
+        "scope": "resourceGroup"
+      },
+      {
+        "value": "Microsoft.ContainerService/managedClusters/accessProfiles/listCredential/action",
+        "use_case": "Performing Create Read Update and Delete (CRUD) operations on an Exocompute instance.",
+        "scope": "resourceGroup"
+      },
+      {
+        "value": "Microsoft.ContainerService/managedClusters/availableAgentPoolVersions/read",
+        "use_case": "Performing Create Read Update and Delete (CRUD) operations on an Exocompute instance.",
+        "scope": "resourceGroup"
+      },
+      {
+        "value": "Microsoft.ContainerService/managedClusters/networkSecurityPerimeterAssociationProxies/read",
+        "use_case": "Performing Create Read Update and Delete (CRUD) operations on an Exocompute instance.",
+        "scope": "resourceGroup"
+      },
+      {
+        "value": "Microsoft.ContainerService/managedClusters/networkSecurityPerimeterAssociationProxies/write",
+        "use_case": "Performing Create Read Update and Delete (CRUD) operations on an Exocompute instance.",
+        "scope": "resourceGroup"
+      },
+      {
+        "value": "Microsoft.ContainerService/managedClusters/networkSecurityPerimeterAssociationProxies/delete",
+        "use_case": "Performing Create Read Update and Delete (CRUD) operations on an Exocompute instance.",
+        "scope": "resourceGroup"
+      },
+      {
+        "value": "Microsoft.ContainerService/managedClusters/networkSecurityPerimeterConfigurations/read",
+        "use_case": "Performing Create Read Update and Delete (CRUD) operations on an Exocompute instance.",
+        "scope": "resourceGroup"
+      },
+      {
+        "value": "Microsoft.ContainerService/managedClusters/providers/Microsoft.Insights/diagnosticSettings/read",
+        "use_case": "Performing Create Read Update and Delete (CRUD) operations on an Exocompute instance.",
+        "scope": "resourceGroup"
+      },
+      {
+        "value": "Microsoft.ContainerService/managedClusters/privateEndpointConnections/read",
+        "use_case": "Performing Create Read Update and Delete (CRUD) operations on an Exocompute instance.",
+        "scope": "resourceGroup"
+      },
+      {
+        "value": "Microsoft.ContainerService/managedClusters/privateEndpointConnections/write",
+        "use_case": "Performing Create Read Update and Delete (CRUD) operations on an Exocompute instance.",
+        "scope": "resourceGroup"
+      },
+      {
+        "value": "Microsoft.ContainerService/managedClusters/privateEndpointConnections/delete",
+        "use_case": "Performing Create Read Update and Delete (CRUD) operations on an Exocompute instance.",
+        "scope": "resourceGroup"
+      },
+      {
+        "value": "Microsoft.ContainerService/managedClusters/providers/Microsoft.Insights/logDefinitions/read",
+        "use_case": "Performing Create Read Update and Delete (CRUD) operations on an Exocompute instance.",
+        "scope": "resourceGroup"
+      },
+      {
+        "value": "Microsoft.ContainerService/managedClusters/providers/Microsoft.Insights/metricDefinitions/read",
+        "use_case": "Performing Create Read Update and Delete (CRUD) operations on an Exocompute instance.",
+        "scope": "resourceGroup"
+      },
+      {
+        "value": "Microsoft.ContainerService/managedClusters/upgradeProfiles/read",
+        "use_case": "Performing Create Read Update and Delete (CRUD) operations on an Exocompute instance.",
+        "scope": "resourceGroup"
+      },
+      {
+        "value": "Microsoft.Compute/disks/read",
+        "use_case": "Performing Create Read Update and Delete (CRUD) operations on an Exocompute instance.",
+        "scope": "resourceGroup"
+      },
+      {
+        "value": "Microsoft.Compute/disks/write",
+        "use_case": "Performing Create Read Update and Delete (CRUD) operations on an Exocompute instance.",
+        "scope": "resourceGroup"
+      },
+      {
+        "value": "Microsoft.Compute/disks/delete",
+        "use_case": "Performing Create Read Update and Delete (CRUD) operations on an Exocompute instance.",
+        "scope": "resourceGroup"
+      }
+    ],
+    "NotActions": null,
+    "DataActions": null,
+    "NotDataActions": null
+  }
+]

@@ -1,0 +1,19 @@
+[
+  {
+    "Actions": [
+      {
+        "value": "Microsoft.KeyVault/vaults/read",
+        "use_case": "Use to list all the Key Vaults available in a region to choose the key.",
+        "scope": "subscription"
+      },
+      {
+        "value": "Microsoft.KeyVault/vaults/keys/read",
+        "use_case": "Use to list the keys in a Key Vault to choose the key for encrypting the data using serverside encryption and customer-managed key.",
+        "scope": "subscription"
+      }
+    ],
+    "NotActions": null,
+    "DataActions": null,
+    "NotDataActions": null
+  }
+]

@@ -1,0 +1,79 @@
+[
+  {
+    "Actions": [
+      {
+        "value": "Microsoft.Resources/subscriptions/resourceGroups/read",
+        "use_case": "Getting or listing resource groups.",
+        "scope": "subscription"
+      },
+      {
+        "value": "Microsoft.Sql/locations/read",
+        "use_case": "Getting the available locations for a subscription.",
+        "scope": "subscription"
+      },
+      {
+        "value": "Microsoft.Sql/locations/*/read",
+        "use_case": "Getting the status of the database SLA sync operation.",
+        "scope": "subscription"
+      },
+      {
+        "value": "Microsoft.Sql/locations/databaseAzureAsyncOperation/read",
+        "use_case": "Getting the status of a database operation.",
+        "scope": "subscription"
+      },
+      {
+        "value": "Microsoft.Sql/locations/deletedServers/read",
+        "use_case": "Retrieving the list of deleted servers or retrieving the properties of the specified deleted server.",
+        "scope": "subscription"
+      },
+      {
+        "value": "Microsoft.Sql/locations/longTermRetentionBackups/read",
+        "use_case": "Listing the long-term retention backups for every database on every server in a location.",
+        "scope": "subscription"
+      },
+      {
+        "value": "Microsoft.Sql/locations/longTermRetentionServers/longTermRetentionBackups/read",
+        "use_case": "Listing the long-term retention backups for every database on a server.",
+        "scope": "subscription"
+      },
+      {
+        "value": "Microsoft.Sql/locations/longTermRetentionServers/longTermRetentionDatabases/longTermRetentionBackups/read",
+        "use_case": "Listing the long-term retention backups for a database.",
+        "scope": "subscription"
+      },
+      {
+        "value": "Microsoft.Sql/managedInstances/read",
+        "use_case": "Retrieving the list of managed instances or retrieving the properties for the specified managed instance.",
+        "scope": "subscription"
+      },
+      {
+        "value": "Microsoft.Sql/managedInstances/databases/read",
+        "use_case": "Getting the existing managed databases.",
+        "scope": "subscription"
+      },
+      {
+        "value": "Microsoft.Sql/managedInstances/databases/backupLongTermRetentionPolicies/write",
+        "use_case": "Updating the long-term retention policy for a managed database.",
+        "scope": "subscription"
+      },
+      {
+        "value": "Microsoft.Sql/managedInstances/databases/backupLongTermRetentionPolicies/read",
+        "use_case": "Getting the long-term retention policy for a managed database.",
+        "scope": "subscription"
+      },
+      {
+        "value": "Microsoft.Sql/managedInstances/databases/backupShortTermRetentionPolicies/read",
+        "use_case": "Getting the short-term retention policy for a managed database.",
+        "scope": "subscription"
+      },
+      {
+        "value": "Microsoft.Sql/managedInstances/databases/backupShortTermRetentionPolicies/write",
+        "use_case": "Updating the short-term retention policy for a managed database.",
+        "scope": "subscription"
+      }
+    ],
+    "NotActions": null,
+    "DataActions": null,
+    "NotDataActions": null
+  }
+]

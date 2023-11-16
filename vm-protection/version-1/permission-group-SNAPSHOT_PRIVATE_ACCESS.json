@@ -1,0 +1,44 @@
+[
+  {
+    "Actions": [
+      {
+        "value": "Microsoft.Compute/diskAccesses/read",
+        "use_case": "Required to read disk access.",
+        "scope": "subscription"
+      },
+      {
+        "value": "Microsoft.Network/diskAccesses/write",
+        "use_case": "Required to create disk access.",
+        "scope": "resourceGroup"
+      },
+      {
+        "value": "Microsoft.Network/diskAccesses/delete",
+        "use_case": "Required to delete disk access.",
+        "scope": "resourceGroup"
+      },
+      {
+        "value": "Microsoft.Compute/diskAccesses/privateEndpointConnections/read",
+        "use_case": "Required to read private endpoint connections of a disk access.",
+        "scope": "resourceGroup"
+      },
+      {
+        "value": "Microsoft.Compute/diskAccesses/privateEndpointConnections/write",
+        "use_case": "Required to create private endpoint connections for a disk access.",
+        "scope": "resourceGroup"
+      },
+      {
+        "value": "Microsoft.Compute/diskAccesses/privateEndpointConnections/delete",
+        "use_case": "Required to delete private endpoint connections from a disk access.",
+        "scope": "resourceGroup"
+      },
+      {
+        "value": "Microsoft.Compute/diskAccesses/privateEndpointConnectionsApproval/action",
+        "use_case": "Required for auto-approval of private endpoint connection.",
+        "scope": "resourceGroup"
+      }
+    ],
+    "NotActions": null,
+    "DataActions": null,
+    "NotDataActions": null
+  }
+]

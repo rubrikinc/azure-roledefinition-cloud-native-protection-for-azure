@@ -1,0 +1,109 @@
+[
+  {
+    "Actions": [
+      {
+        "value": "Microsoft.Resources/subscriptions/resourceGroups/read",
+        "use_case": "Getting or listing resource groups.",
+        "scope": "subscription"
+      },
+      {
+        "value": "Microsoft.Sql/locations/read",
+        "use_case": "Getting the available locations for a subscription.",
+        "scope": "subscription"
+      },
+      {
+        "value": "Microsoft.Sql/locations/*/read",
+        "use_case": "Getting the status of the database SLA sync operation.",
+        "scope": "subscription"
+      },
+      {
+        "value": "Microsoft.Sql/locations/databaseAzureAsyncOperation/read",
+        "use_case": "Getting the status of a database operation.",
+        "scope": "subscription"
+      },
+      {
+        "value": "Microsoft.Sql/locations/deletedServers/read",
+        "use_case": "Retrieving the list of deleted servers or retrieving the properties of the specified deleted server.",
+        "scope": "subscription"
+      },
+      {
+        "value": "Microsoft.Sql/locations/longTermRetentionBackups/read",
+        "use_case": "Listing the long-term retention backups for every database on every server in a location.",
+        "scope": "subscription"
+      },
+      {
+        "value": "Microsoft.Sql/locations/longTermRetentionServers/longTermRetentionBackups/read",
+        "use_case": "Listing the long-term retention backups for every database on a server.",
+        "scope": "subscription"
+      },
+      {
+        "value": "Microsoft.Sql/locations/longTermRetentionServers/longTermRetentionDatabases/longTermRetentionBackups/read",
+        "use_case": "Listing the long-term retention backups for a database.",
+        "scope": "subscription"
+      },
+      {
+        "value": "Microsoft.Sql/servers/read",
+        "use_case": "Retrieving the list of servers or retrieving the properties for the specified server.",
+        "scope": "subscription"
+      },
+      {
+        "value": "Microsoft.Sql/servers/databases/read",
+        "use_case": "Retrieving the list of databases or retrieving the properties for the specified database.",
+        "scope": "subscription"
+      },
+      {
+        "value": "Microsoft.Sql/servers/elasticPools/read",
+        "use_case": "Retrieving the list of elastic pools for a server.",
+        "scope": "subscription"
+      },
+      {
+        "value": "Microsoft.Sql/servers/databases/operations/read",
+        "use_case": "Retrieving the list of operations performed on the database.",
+        "scope": "subscription"
+      },
+      {
+        "value": "Microsoft.Sql/servers/databases/operationResults/read",
+        "use_case": "Getting the status of a database operation.",
+        "scope": "subscription"
+      },
+      {
+        "value": "Microsoft.Sql/servers/databases/azureAsyncOperation/read",
+        "use_case": "Getting the status of a database operation.",
+        "scope": "subscription"
+      },
+      {
+        "value": "Microsoft.Sql/servers/databases/geoBackupPolicies/read",
+        "use_case": "Retrieving geo-backup policies for the specified database.",
+        "scope": "subscription"
+      },
+      {
+        "value": "Microsoft.Sql/servers/databases/geoBackupPolicies/write",
+        "use_case": "Creating or updating a database geo-backup policy.",
+        "scope": "subscription"
+      },
+      {
+        "value": "Microsoft.Sql/servers/databases/backupLongTermRetentionPolicies/read",
+        "use_case": "Getting the long-term retention policy for a database.",
+        "scope": "subscription"
+      },
+      {
+        "value": "Microsoft.Sql/servers/databases/backupLongTermRetentionPolicies/write",
+        "use_case": "Creating or updating the long-term retention policy for a database.",
+        "scope": "subscription"
+      },
+      {
+        "value": "Microsoft.Sql/servers/databases/backupShortTermRetentionPolicies/read",
+        "use_case": "Getting the short-term retention policy for a database.",
+        "scope": "subscription"
+      },
+      {
+        "value": "Microsoft.Sql/servers/databases/backupShortTermRetentionPolicies/write",
+        "use_case": "Updating the short-term retention policy for a database.",
+        "scope": "subscription"
+      }
+    ],
+    "NotActions": null,
+    "DataActions": null,
+    "NotDataActions": null
+  }
+]

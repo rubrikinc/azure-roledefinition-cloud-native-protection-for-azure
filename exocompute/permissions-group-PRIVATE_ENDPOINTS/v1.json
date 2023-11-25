@@ -1,0 +1,79 @@
+[
+  {
+    "Actions": [
+      {
+        "value": "Microsoft.Network/privateEndpoints/read",
+        "use_case": "Required to read private endpoints.",
+        "scope": "resourceGroup"
+      },
+      {
+        "value": "Microsoft.Network/privateEndpoints/write",
+        "use_case": "Required to create private endpoints.",
+        "scope": "resourceGroup"
+      },
+      {
+        "value": "Microsoft.Network/privateEndpoints/delete",
+        "use_case": "Required to delete private endpoints.",
+        "scope": "resourceGroup"
+      },
+      {
+        "value": "Microsoft.Network/privateEndpoints/privateDnsZoneGroups/read",
+        "use_case": "Required to read private DNS Zone Groups.",
+        "scope": "resourceGroup"
+      },
+      {
+        "value": "Microsoft.Network/privateEndpoints/privateDnsZoneGroups/write",
+        "use_case": "Required to create private DNS Zone Groups.",
+        "scope": "resourceGroup"
+      },
+      {
+        "value": "Microsoft.Network/privateEndpoints/privateDnsZoneGroups/delete",
+        "use_case": "Required to delete private DNS Zone Groups.",
+        "scope": "resourceGroup"
+      },
+      {
+        "value": "Microsoft.Network/privateEndpoints/privateDnsZones/read",
+        "use_case": "Required to read private DNS Zones.",
+        "scope": "resourceGroup"
+      },
+      {
+        "value": "Microsoft.Network/privateEndpoints/privateDnsZones/write",
+        "use_case": "Required to create private DNS Zones.",
+        "scope": "resourceGroup"
+      },
+      {
+        "value": "Microsoft.Network/privateEndpoints/privateDnsZones/delete",
+        "use_case": "Required to delete private DNS Zones.",
+        "scope": "resourceGroup"
+      },
+      {
+        "value": "Microsoft.Network/privateDnsZones/virtualNetworkLinks/read",
+        "use_case": "Required to read virtual network links of private DNS Zones.",
+        "scope": "resourceGroup"
+      },
+      {
+        "value": "Microsoft.Network/privateDnsZones/virtualNetworkLinks/write",
+        "use_case": "Required to create virtual network links for private DNS Zones.",
+        "scope": "resourceGroup"
+      },
+      {
+        "value": "Microsoft.Network/privateDnsZones/virtualNetworkLinks/delete",
+        "use_case": "Required to delete virtual network links of private DNS Zones.",
+        "scope": "resourceGroup"
+      },
+      {
+        "value": "Microsoft.Network/privateDnsZones/join/action",
+        "use_case": "Required to link a private endpoint to a private DNS Zone.",
+        "scope": "resourceGroup"
+      },
+      {
+        "value": "Microsoft.Network/virtualNetworks/join/action",
+        "use_case": "Required to link a virtual network to a private DNS Zone.",
+        "scope": "subscription"
+      }
+    ],
+    "NotActions": null,
+    "DataActions": null,
+    "NotDataActions": null
+  }
+]

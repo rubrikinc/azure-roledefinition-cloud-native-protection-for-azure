@@ -1,0 +1,14 @@
+[
+  {
+    "Actions": [
+      {
+        "value": "Microsoft.Resources/subscriptions/resourceGroups/write",
+        "use_case": "Creating a resource group.",
+        "scope": "subscription"
+      }
+    ],
+    "NotActions": null,
+    "DataActions": null,
+    "NotDataActions": null
+  }
+]

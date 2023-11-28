@@ -1,0 +1,24 @@
+[
+  {
+    "Actions": null,
+    "NotActions": null,
+    "DataActions": [
+      {
+        "value": "Microsoft.KeyVault/vaults/keys/unwrap/action",
+        "use_case": "Use to perform encryption on archived data using customer-managed keys.",
+        "scope": "resourceGroup"
+      },
+      {
+        "value": "Microsoft.KeyVault/vaults/keys/wrap/action",
+        "use_case": "Use to perform encryption on archived data using customer-managed keys.",
+        "scope": "resourceGroup"
+      },
+      {
+        "value": "Microsoft.KeyVault/vaults/keys/read",
+        "use_case": "Use to perform encryption on archived data using customer-managed keys.",
+        "scope": "resourceGroup"
+      }
+    ],
+    "NotDataActions": null
+  }
+]

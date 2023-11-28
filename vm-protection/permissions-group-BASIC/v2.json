@@ -1,0 +1,217 @@
+[
+  {
+    "Actions": [
+      {
+        "value": "Microsoft.Compute/disks/read",
+        "use_case": "Use to retrieve the properties of a disk.",
+        "scope": "subscription"
+      },
+      {
+        "value": "Microsoft.Compute/locations/vmSizes/read",
+        "scope": "subscription"
+      },
+      {
+        "value": "Microsoft.Compute/skus/read",
+        "scope": "subscription"
+      },
+      {
+        "value": "Microsoft.Compute/virtualMachines/instanceView/read",
+        "scope": "subscription"
+      },
+      {
+        "value": "Microsoft.Compute/virtualMachines/read",
+        "scope": "subscription"
+      },
+      {
+        "value": "Microsoft.Network/networkInterfaces/ipconfigurations/read",
+        "scope": "subscription"
+      },
+      {
+        "value": "Microsoft.Network/networkInterfaces/read",
+        "scope": "subscription"
+      },
+      {
+        "value": "Microsoft.Network/networkSecurityGroups/read",
+        "scope": "subscription"
+      },
+      {
+        "value": "Microsoft.Network/virtualNetworks/read",
+        "scope": "subscription"
+      },
+      {
+        "value": "Microsoft.Network/virtualNetworks/subnets/read",
+        "scope": "subscription"
+      },
+      {
+        "value": "Microsoft.Resources/checkResourceName/action",
+        "scope": "subscription"
+      },
+      {
+        "value": "Microsoft.Resources/subscriptions/locations/read",
+        "scope": "subscription"
+      },
+      {
+        "value": "Microsoft.Resources/subscriptions/resourceGroups/read",
+        "scope": "subscription"
+      },
+      {
+        "value": "Microsoft.Resources/subscriptions/resourceGroups/resources/read",
+        "scope": "subscription"
+      },
+      {
+        "value": "Microsoft.Storage/storageAccounts/blobServices/containers/read",
+        "scope": "subscription"
+      },
+      {
+        "value": "Microsoft.Resources/subscriptions/resources/read",
+        "scope": "subscription"
+      },
+      {
+        "value": "Microsoft.Compute/availabilitySets/read",
+        "scope": "subscription"
+      },
+      {
+        "value": "Microsoft.Storage/storageAccounts/read",
+        "scope": "subscription"
+      },
+      {
+        "value": "Microsoft.Compute/diskEncryptionSets/read",
+        "scope": "subscription"
+      },
+      {
+        "value": "Microsoft.Compute/galleries/images/versions/read",
+        "scope": "subscription"
+      },
+      {
+        "value": "Microsoft.Compute/disks/beginGetAccess/action",
+        "scope": "subscription"
+      },
+      {
+        "value": "Microsoft.Compute/disks/endGetAccess/action",
+        "scope": "subscription"
+      },
+      {
+        "value": "Microsoft.Network/networkSecurityGroups/join/action",
+        "scope": "subscription"
+      },
+      {
+        "value": "Microsoft.Network/virtualNetworks/subnets/join/action",
+        "scope": "subscription"
+      },
+      {
+        "value": "Microsoft.Network/networkInterfaces/join/action",
+        "scope": "subscription"
+      },
+      {
+        "value":   "Microsoft.Compute/diskAccesses/read",
+        "scope":   "subscription",
+        "use_case": "Required for linking a disk access resource to a managed disk snapshot."
+      },
+      {
+        "value": "Microsoft.Compute/snapshots/read",
+        "scope": "resourceGroup"
+      },
+      {
+        "value": "Microsoft.Compute/snapshots/write",
+        "scope": "resourceGroup"
+      },
+      {
+        "value": "Microsoft.Compute/snapshots/delete",
+        "scope": "resourceGroup"
+      },
+      {
+        "value": "Microsoft.Compute/snapshots/beginGetAccess/action",
+        "scope": "resourceGroup"
+      },
+      {
+        "value": "Microsoft.Compute/snapshots/endGetAccess/action",
+        "scope": "resourceGroup"
+      },
+      {
+        "value": "Microsoft.Resources/subscriptions/resourceGroups/write",
+        "scope": "resourceGroup"
+      },
+      {
+        "value": "Microsoft.Authorization/locks/read",
+        "scope": "resourceGroup"
+      },
+      {
+        "value": "Microsoft.Authorization/locks/write",
+        "scope": "resourceGroup"
+      },
+      {
+        "value": "Microsoft.Authorization/locks/delete",
+        "scope": "resourceGroup"
+      },
+      {
+        "value": "Microsoft.Storage/storageAccounts/listServiceSas/action",
+        "scope": "resourceGroup"
+      },
+      {
+        "value": "Microsoft.Compute/disks/write",
+        "scope": "resourceGroup"
+      },
+      {
+        "value": "Microsoft.Compute/disks/delete",
+        "scope": "resourceGroup"
+      },
+      {
+        "value": "Microsoft.Network/networkInterfaces/delete",
+        "scope": "resourceGroup"
+      },
+      {
+        "value": "Microsoft.Network/networkInterfaces/write",
+        "scope": "resourceGroup"
+      },
+      {
+        "value": "Microsoft.KeyVault/vaults/deploy/action",
+        "scope": "resourceGroup"
+      },
+      {
+        "value": "Microsoft.Compute/virtualMachines/extensions/write",
+        "scope": "resourceGroup"
+      },
+      {
+        "value": "Microsoft.Network/networkSecurityGroups/write",
+        "scope": "resourceGroup"
+      },
+      {
+        "value": "Microsoft.Network/networkSecurityGroups/delete",
+        "scope": "resourceGroup"
+      },
+      {
+        "value": "Microsoft.Storage/storageAccounts/write",
+        "scope": "resourceGroup"
+      },
+      {
+        "value": "Microsoft.Storage/storageAccounts/blobServices/containers/write",
+        "scope": "resourceGroup"
+      },
+      {
+        "value": "Microsoft.Storage/storageAccounts/blobServices/containers/delete",
+        "scope": "resourceGroup"
+      },
+      {
+        "value": "Microsoft.Storage/storageAccounts/listkeys/action",
+        "use_case": "Required for accessing container for CCES. CCES needs storage container key during bootstrap.",
+        "scope": "subscription"
+      }
+    ],
+    "NotActions": null,
+    "DataActions": [
+      {
+        "value": "Microsoft.Storage/storageAccounts/blobServices/containers/blobs/read",
+        "scope": "subscription"
+      },
+      {
+        "value": "Microsoft.Storage/storageAccounts/blobServices/containers/blobs/write",
+        "scope": "resourceGroup"
+      },
+      {
+        "value": "Microsoft.Storage/storageAccounts/blobServices/containers/blobs/delete",
+        "scope": "resourceGroup"
+      }
+    ],
+    "NotDataActions": null
+  }
+]

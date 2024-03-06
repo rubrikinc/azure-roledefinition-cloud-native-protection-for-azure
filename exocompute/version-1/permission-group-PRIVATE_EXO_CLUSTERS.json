@@ -1,0 +1,19 @@
+[
+  {
+    "Actions": [
+      {
+        "value": "Microsoft.ContainerService/managedClusters/runCommand/action",
+        "use_case": "Running diagnostic commands like launching tunnels on private Exocompute clusters.",
+        "scope": "resourceGroup"
+      },
+      {
+        "value": "Microsoft.ContainerService/managedClusters/commandResults/read",
+        "use_case": "Reading the results of diagnostic commands like launching reverse tunnels on private Exocompute clusters.",
+        "scope": "resourceGroup"
+      }
+    ],
+    "NotActions": null,
+    "DataActions": null,
+    "NotDataActions": null
+  }
+]

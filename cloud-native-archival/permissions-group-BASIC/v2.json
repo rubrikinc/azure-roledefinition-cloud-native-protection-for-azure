@@ -81,11 +81,10 @@
         "use_case": "Enabling versioning on storage accounts and reading blob service properties of a storage account.",
         "scope": "resourceGroup"
       },
-      // Added in version 2
       {
-        Value:   "Microsoft.Storage/storageAccounts/blobServices/generateUserDelegationKey/action",
-        Scope:   permissions.ResourceGroup,
-        UseCase: "Enabling AAD authentication during archival in storage account.",
+        "value": "Microsoft.Storage/storageAccounts/blobServices/generateUserDelegationKey/action",
+        "use_case": "Enabling AAD authentication during archival in storage account.",
+        "scope": "resourceGroup"
       },
     ],
     "NotActions": null,
@@ -110,11 +109,10 @@
         "use_case": "Creating writing and deleting page blobs during the cross-region replication.",
         "scope": "resourceGroup"
       },
-      // Added in version 2
       {
-        Value:   "Microsoft.Storage/storageAccounts/blobServices/containers/blobs/deleteBlobVersion/action",
-        Scope:   permissions.ResourceGroup,
-        UseCase: "Deleting blob versions after their expiry in the storage account.",
+        "value": "Microsoft.Storage/storageAccounts/blobServices/containers/blobs/deleteBlobVersion/action",
+        "use_case": "Deleting blob versions after their expiry in the storage account.",
+        "scope": "resourceGroup",
       },
     ],
     "NotDataActions": null

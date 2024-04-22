@@ -85,7 +85,7 @@
         "value": "Microsoft.Storage/storageAccounts/blobServices/generateUserDelegationKey/action",
         "use_case": "Enabling AAD authentication during archival in storage account.",
         "scope": "resourceGroup"
-      },
+      }
     ],
     "NotActions": null,
     "DataActions": [
@@ -112,8 +112,8 @@
       {
         "value": "Microsoft.Storage/storageAccounts/blobServices/containers/blobs/deleteBlobVersion/action",
         "use_case": "Deleting blob versions after their expiry in the storage account.",
-        "scope": "resourceGroup",
-      },
+        "scope": "resourceGroup"
+      }
     ],
     "NotDataActions": null
   }

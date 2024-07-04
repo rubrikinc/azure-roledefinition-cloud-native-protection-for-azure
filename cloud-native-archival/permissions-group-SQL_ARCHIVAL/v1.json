@@ -3,17 +3,17 @@
 		"Actions": [
 			{
 				"value": "Microsoft.Storage/storageAccounts/tableServices/tables/read",
-				"use_case": "Enabling AAD authentication to read Colossus metadata in Azure Sql Protection",
+				"use_case": "Creating, Reading and Writing Colossus metadata for Azure Sql Protection",
 				"scope": "resourceGroup"
 			},
 			{
 				"value": "Microsoft.Storage/storageAccounts/tableServices/tables/write",
-				"use_case": "Enabling AAD authentication to write Colossus metadata in Azure Sql Protection",
+				"use_case": "Creating, Reading and Writing Colossus metadata for Azure Sql Protection",
 				"scope": "resourceGroup"
 			},
 			{
 				"value": "Microsoft.Storage/storageAccounts/tableServices/tables/delete",
-				"use_case": "Enabling AAD authentication to delete Colossus metadata in Azure Sql Protection",
+				"use_case": "Creating, Reading and Writing Colossus metadata for Azure Sql Protection",
 				"scope": "resourceGroup"
 			}
 		],
@@ -21,27 +21,27 @@
 		"DataActions": [
 			{
 				"value": "Microsoft.Storage/storageAccounts/tableServices/tables/entities/read",
-				"use_case": "Enabling AAD authentication to read Colossus metadata in Azure Sql Protection",
+				"use_case": "Creating, Reading and Writing Colossus metadata for Azure Sql Protection",
 				"scope": "resourceGroup"
 			},
 			{
 				"value": "Microsoft.Storage/storageAccounts/tableServices/tables/entities/write",
-				"use_case": "Enabling AAD authentication to write Colossus metadata in Azure Sql Protection",
+				"use_case": "Creating, Reading and Writing Colossus metadata for Azure Sql Protection",
 				"scope": "resourceGroup"
 			},
 			{
 				"value": "Microsoft.Storage/storageAccounts/tableServices/tables/entities/delete",
-				"use_case": "Enabling AAD authentication to read Colossus metadata in Azure Sql Protection",
+				"use_case": "Creating, Reading and Writing Colossus metadata for Azure Sql Protection",
 				"scope": "resourceGroup"
 			},
 			{
 				"value": "Microsoft.Storage/storageAccounts/blobServices/containers/blobs/tags/write",
-				"use_case": "Enabling AAD authentication to putBlockList in Blobs in Azure Sql Protection",
+				"use_case": "Storing and retrieving Blob data using tags for Azure Sql Protection",
 				"scope": "resourceGroup"
 			},
 			{
 				"value": "Microsoft.Storage/storageAccounts/blobServices/containers/blobs/filter/action",
-				"use_case": "Enabling AAD authentication to putBlockList in Blobs in Azure Sql Protection",
+				"use_case": "Storing and retrieving Blob data using tags for Azure Sql Protection",
 				"scope": "resourceGroup"
 			}
 		],

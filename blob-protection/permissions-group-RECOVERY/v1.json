@@ -1,0 +1,35 @@
+[
+  {
+    "Actions": [
+      {
+        "value": "Microsoft.Storage/storageAccounts/write",
+        "use_case": "Use to create storage accounts during recovery tasks.",
+        "scope": "subscription"
+      },
+      {
+        "value": "Microsoft.Storage/storageAccounts/blobServices/containers/write",
+        "use_case": "Use to create containers during recovery tasks.",
+        "scope": "subscription"
+      },
+      {
+        "value": "Microsoft.Storage/storageAccounts/blobServices/containers/delete",
+        "use_case": "Use to delete containers during recovery tasks.",
+        "scope": "subscription"
+      }
+    ],
+    "NotActions": null,
+    "DataActions": [
+      {
+        "value": "Microsoft.Storage/storageAccounts/blobServices/containers/blobs/write",
+        "use_case": "Use to write blobs during recovery tasks.",
+        "scope": "subscription"
+      },
+      {
+        "value": "Microsoft.Storage/storageAccounts/blobServices/containers/blobs/delete",
+        "use_case": "Use to delete blobs during recovery tasks.",
+        "scope": "subscription"
+      }
+    ],
+    "NotDataActions": null
+  }
+]

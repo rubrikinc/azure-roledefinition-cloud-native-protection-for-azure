@@ -1,0 +1,35 @@
+[
+  {
+    "Actions": [
+      {
+        "value": "Microsoft.Resources/subscriptions/resourceGroups/read",
+        "use_case": "Use to perform refresh tasks.",
+        "scope": "subscription"
+      },
+      {
+        "value": "Microsoft.Storage/storageAccounts/read",
+        "use_case": "Use to list storage accounts for backup and recovery tasks.",
+        "scope": "subscription"
+      },
+      {
+        "value": "Microsoft.Storage/storageAccounts/blobServices/containers/read",
+        "use_case": "Use to list blob containers for backup and recovery tasks.",
+        "scope": "subscription"
+      },
+      {
+        "value": "Microsoft.Insights/Metrics/Read",
+        "use_case": "Use to read storage account metrics.",
+        "scope": "subscription"
+      }
+    ],
+    "NotActions": null,
+    "DataActions": [
+      {
+        "value": "Microsoft.Storage/storageAccounts/blobServices/containers/blobs/read",
+        "use_case": "Use to read blobs to perform backup tasks.",
+        "scope": "subscription"
+      }
+    ],
+    "NotDataActions": null
+  }
+]

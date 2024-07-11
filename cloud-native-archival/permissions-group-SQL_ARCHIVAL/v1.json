@@ -1,0 +1,50 @@
+[
+	{
+		"Actions": [
+			{
+				"value": "Microsoft.Storage/storageAccounts/tableServices/tables/read",
+				"use_case": "Creating, Reading and Writing Colossus metadata for Azure Sql Protection",
+				"scope": "resourceGroup"
+			},
+			{
+				"value": "Microsoft.Storage/storageAccounts/tableServices/tables/write",
+				"use_case": "Creating, Reading and Writing Colossus metadata for Azure Sql Protection",
+				"scope": "resourceGroup"
+			},
+			{
+				"value": "Microsoft.Storage/storageAccounts/tableServices/tables/delete",
+				"use_case": "Creating, Reading and Writing Colossus metadata for Azure Sql Protection",
+				"scope": "resourceGroup"
+			}
+		],
+		"NotActions": null,
+		"DataActions": [
+			{
+				"value": "Microsoft.Storage/storageAccounts/tableServices/tables/entities/read",
+				"use_case": "Creating, Reading and Writing Colossus metadata for Azure Sql Protection",
+				"scope": "resourceGroup"
+			},
+			{
+				"value": "Microsoft.Storage/storageAccounts/tableServices/tables/entities/write",
+				"use_case": "Creating, Reading and Writing Colossus metadata for Azure Sql Protection",
+				"scope": "resourceGroup"
+			},
+			{
+				"value": "Microsoft.Storage/storageAccounts/tableServices/tables/entities/delete",
+				"use_case": "Creating, Reading and Writing Colossus metadata for Azure Sql Protection",
+				"scope": "resourceGroup"
+			},
+			{
+				"value": "Microsoft.Storage/storageAccounts/blobServices/containers/blobs/tags/write",
+				"use_case": "Storing and retrieving Blob data using tags for Azure Sql Protection",
+				"scope": "resourceGroup"
+			},
+			{
+				"value": "Microsoft.Storage/storageAccounts/blobServices/containers/blobs/filter/action",
+				"use_case": "Storing and retrieving Blob data using tags for Azure Sql Protection",
+				"scope": "resourceGroup"
+			}
+		],
+		"NotDataActions": null
+	}
+]

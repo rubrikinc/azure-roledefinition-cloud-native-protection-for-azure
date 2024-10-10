@@ -1,0 +1,69 @@
+[
+    {
+    "Actions": [
+        {
+            "value":   "Microsoft.ContainerRegistry/registries/importImage/action",
+            "use_case": "Importing an image to the container registry",
+            "scope":   "resourceGroup"
+        },
+        {
+            "value":   "Microsoft.ContainerRegistry/registries/pull/read",
+            "use_case": "Pulling images.",
+            "scope":   "resourceGroup"
+        },
+        {
+            "value":   "Microsoft.ContainerRegistry/registries/read",
+            "use_case": "Reading registries.",
+            "scope":   "resourceGroup"
+        },
+        {
+            "value":   "Microsoft.Resources/subscriptions/resourceGroups/read",
+            "use_case": "Performing refresh tasks.",
+            "scope":   "resourceGroup"
+        },
+        {
+            "value":   "Microsoft.Resources/subscriptions/resourceGroups/write",
+            "use_case": "Creating a separate resource group to store snapshots taken by Polaris.",
+            "scope":   "resourceGroup"
+        },
+        {
+            "value":   "Microsoft.ContainerService/managedClusters/read",
+            "use_case": "Performing Create Read Update and Delete (CRUD) operations on an Exocompute instance.",
+            "scope":   "resourceGroup"
+        },
+        {
+            "value":   "Microsoft.ContainerService/managedClusters/agentPools/read",
+            "use_case": "Performing Create Read Update and Delete (CRUD) operations on an Exocompute instance.",
+            "scope":   "resourceGroup"
+        },
+        {
+            "value":   "Microsoft.ContainerService/managedClusters/accessProfiles/read",
+            "use_case": "Performing Create Read Update and Delete (CRUD) operations on an Exocompute instance.",
+            "scope":   "resourceGroup"
+        },
+        {
+            "value":   "Microsoft.ContainerService/managedClusters/accessProfiles/listCredential/action",
+            "use_case": "Performing Create Read Update and Delete (CRUD) operations on an Exocompute instance.",
+            "scope":   "resourceGroup"
+        },
+        {
+            "value":   "Microsoft.Compute/disks/read",
+            "use_case": "Performing Create Read Update and Delete (CRUD) operations on an Exocompute instance.",
+            "scope":   "resourceGroup"
+        },
+        {
+            "value":   "Microsoft.Compute/disks/write",
+            "use_case": "Performing Create Read Update and Delete (CRUD) operations on an Exocompute instance.",
+            "scope":   "resourceGroup"
+        },
+        {
+            "value":   "Microsoft.Compute/disks/delete",
+            "use_case": "Performing Create Read Update and Delete (CRUD) operations on an Exocompute instance.",
+            "scope":   "resourceGroup"
+        }
+    ],
+    "NotActions": null,
+    "DataActions": null,
+    "NotDataActions": null
+  }
+]

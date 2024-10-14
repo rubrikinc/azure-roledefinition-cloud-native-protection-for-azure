@@ -28,37 +28,37 @@
         },
         {
             "value":   "Microsoft.ContainerService/managedClusters/read",
-            "use_case": "Performing Create Read Update and Delete (CRUD) operations on an Exocompute instance.",
+            "use_case": "Reading a managed cluster.",
             "scope":   "resourceGroup"
         },
         {
             "value":   "Microsoft.ContainerService/managedClusters/agentPools/read",
-            "use_case": "Performing Create Read Update and Delete (CRUD) operations on an Exocompute instance.",
+            "use_case": "Reading an agent pool.",
             "scope":   "resourceGroup"
         },
         {
             "value":   "Microsoft.ContainerService/managedClusters/accessProfiles/read",
-            "use_case": "Performing Create Read Update and Delete (CRUD) operations on an Exocompute instance.",
+            "use_case": "Reading a managed cluster access profile by role name.",
             "scope":   "resourceGroup"
         },
         {
             "value":   "Microsoft.ContainerService/managedClusters/accessProfiles/listCredential/action",
-            "use_case": "Performing Create Read Update and Delete (CRUD) operations on an Exocompute instance.",
+            "use_case": "Reading a managed cluster access profile by role name using list credential.",
             "scope":   "resourceGroup"
         },
         {
             "value":   "Microsoft.Compute/disks/read",
-            "use_case": "Performing Create Read Update and Delete (CRUD) operations on an Exocompute instance.",
+            "use_case": "Reading a disk",
             "scope":   "resourceGroup"
         },
         {
             "value":   "Microsoft.Compute/disks/write",
-            "use_case": "Performing Create Read Update and Delete (CRUD) operations on an Exocompute instance.",
+            "use_case": "Creating a new Disk or updating an existing one.",
             "scope":   "resourceGroup"
         },
         {
             "value":   "Microsoft.Compute/disks/delete",
-            "use_case": "Performing Create Read Update and Delete (CRUD) operations on an Exocompute instance.",
+            "use_case": "Deleting a disk if it exists.",
             "scope":   "resourceGroup"
         }
     ],

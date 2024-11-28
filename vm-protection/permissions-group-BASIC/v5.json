@@ -194,7 +194,8 @@
       },
       {
         "value": "Microsoft.Authorization/locks/read",
-        "scope": "subscription"
+        "scope": "subscription",
+        "use_case": "Required to check subscription level locks during backup."
       }
     ],
     "NotActions": null,

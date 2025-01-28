@@ -227,9 +227,9 @@
         "scope":   "resourceGroup"
       },
       {
-	"value":   "Microsoft.Authorization/locks/read",
-	"scope":   "subscription",
-	"use_case": "Reading locks on the subscription."
+        "value":   "Microsoft.Authorization/locks/read",
+        "scope":   "subscription",
+        "use_case": "Reading locks on the subscription."
       }
     ],
     "NotActions": null,

@@ -1,0 +1,95 @@
+[
+  {
+    "Actions": [
+      {
+        "value": "Microsoft.Storage/storageAccounts/read",
+        "use_case": "Returns the list of storage accounts or gets the properties for the specified storage account.",
+        "scope": "resourceGroup"
+      },
+      {
+        "value": "Microsoft.Storage/storageAccounts/write",
+        "use_case": "Creates a storage account with the specified parameters or update the properties or tags or adds custom domain for the specified storage account.",
+        "scope": "resourceGroup"
+      },
+      {
+        "value": "Microsoft.Storage/storageAccounts/delete",
+        "use_case": "Deletes an existing storage account.",
+        "scope": "resourceGroup"
+      },
+      {
+        "value": "Microsoft.Storage/storageAccounts/listkeys/action",
+        "use_case": "Returns the access keys for the specified storage account.",
+        "scope": "resourceGroup"
+      },
+      {
+        "value": "Microsoft.Storage/storageAccounts/listAccountSas/action",
+        "use_case": "Returns the Account SAS token for the specified storage account.",
+        "scope": "resourceGroup"
+      },
+      {
+        "value": "Microsoft.Storage/storageAccounts/blobServices/containers/read",
+        "use_case": "Return a container or a list of containers in storage account.",
+        "scope": "resourceGroup"
+      },
+      {
+        "value": "Microsoft.Storage/storageAccounts/blobServices/containers/write",
+        "use_case": "Write to a container in storage account.",
+        "scope": "resourceGroup"
+      },
+      {
+        "value": "Microsoft.Storage/storageAccounts/blobServices/containers/delete",
+        "use_case": "Delete a container from storage account.",
+        "scope": "resourceGroup"
+      },
+      {
+        "value": "Microsoft.Storage/storageAccounts/blobServices/generateUserDelegationKey/action",
+        "use_case": "Generate a user delegation key for blob storage account.",
+        "scope": "resourceGroup"
+      },
+      {
+        "value": "Microsoft.Storage/storageAccounts/managementPolicies/read",
+        "use_case": "Read management policies from storage accounts.",
+        "scope": "resourceGroup"
+      },
+      {
+        "value": "Microsoft.Storage/storageAccounts/managementPolicies/write",
+        "use_case": "Write management policies for storage accounts.",
+        "scope": "resourceGroup"
+      },
+      {
+        "value": "Microsoft.Storage/storageAccounts/managementPolicies/delete",
+        "use_case": "Delete management policies for storage accounts.",
+        "scope": "resourceGroup"
+      }
+    ],
+    "NotActions": null,
+    "DataActions": [
+      {
+        "value": "Microsoft.Storage/storageAccounts/blobServices/containers/blobs/read",
+        "use_case": "Return a blob or a list of blobs.",
+        "scope": "resourceGroup"
+      },
+      {
+        "value": "Microsoft.Storage/storageAccounts/blobServices/containers/blobs/write",
+        "use_case": "Write to a blob.",
+        "scope": "resourceGroup"
+      },
+      {
+        "value": "Microsoft.Storage/storageAccounts/blobServices/containers/blobs/delete",
+        "use_case": "Delete a blob.",
+        "scope": "resourceGroup"
+      },
+      {
+        "value": "Microsoft.Storage/storageAccounts/blobServices/containers/blobs/move/action",
+        "use_case": "Move a blob within the same storage account.",
+        "scope": "resourceGroup"
+      },
+      {
+        "value": "Microsoft.Storage/storageAccounts/blobServices/containers/blobs/add/action",
+        "use_case": "Create or upload new blobs in a container.",
+        "scope": "resourceGroup"
+      }
+    ],
+    "NotDataActions": null
+  }
+]

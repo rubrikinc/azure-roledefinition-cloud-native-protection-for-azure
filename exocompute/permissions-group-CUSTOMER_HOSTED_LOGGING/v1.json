@@ -12,11 +12,6 @@
         "scope": "resourceGroup"
       },
       {
-        "value": "Microsoft.Storage/storageAccounts/delete",
-        "use_case": "Deletes an existing storage account.",
-        "scope": "resourceGroup"
-      },
-      {
         "value": "Microsoft.Storage/storageAccounts/listkeys/action",
         "use_case": "Returns the access keys for the specified storage account.",
         "scope": "resourceGroup"
@@ -24,6 +19,11 @@
       {
         "value": "Microsoft.Storage/storageAccounts/listAccountSas/action",
         "use_case": "Returns the Account SAS token for the specified storage account.",
+        "scope": "resourceGroup"
+      },
+      {
+        "value": "Microsoft.Storage/storageAccounts/listServiceSas/action",
+        "use_case": "Returns the Service SAS token for the specified storage account.",
         "scope": "resourceGroup"
       },
       {

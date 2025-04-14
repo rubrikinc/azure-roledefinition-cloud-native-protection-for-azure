@@ -1,0 +1,115 @@
+[
+  {
+    "Actions": [
+      {
+        "value": "Microsoft.Storage/storageAccounts/read",
+        "use_case": "Use to create a storage account while creating the archival location. The archived snapshots are stored in the storage account.",
+        "scope": "resourceGroup"
+      },
+      {
+        "value": "Microsoft.Storage/storageAccounts/write",
+        "use_case": "Creating a storage account in a region during the cross-region replication",
+        "scope": "resourceGroup"
+      },
+      {
+        "value": "Microsoft.Storage/storageAccounts/listServiceSas/action",
+        "use_case": "Use to generate a SAS URI to read or write from or to the blobs.",
+        "scope": "resourceGroup"
+      },
+      {
+        "value": "Microsoft.Storage/storageAccounts/blobServices/containers/read",
+        "use_case": "Use to store the archived snapshots in a blob container in a storage account.",
+        "scope": "resourceGroup"
+      },
+      {
+        "value": "Microsoft.Storage/storageAccounts/blobServices/containers/write",
+        "use_case": "Creating writing and deleting page blob containers during the cross-region replication.",
+        "scope": "resourceGroup"
+      },
+      {
+        "value": "Microsoft.Storage/storageAccounts/blobServices/containers/delete",
+        "use_case": "Creating writing and deleting page blob containers during the cross-region replication.",
+        "scope": "resourceGroup"
+      },
+      {
+        "value": "Microsoft.Resources/subscriptions/resourceGroups/read",
+        "use_case": "Use to create the managed identity storage account and container for a resource.",
+        "scope": "resourceGroup"
+      },
+      {
+        "value": "Microsoft.Resources/subscriptions/resourceGroups/write",
+        "use_case": "Creating a separate resource group to store snapshots taken by RSC.",
+        "scope": "resourceGroup"
+      },
+      {
+        "value": "Microsoft.ManagedIdentity/userAssignedIdentities/assign/action",
+        "use_case": "Use to assign the user-assigned managed identity to the storage account to encrypt the data using server-side encryption and customer-managed key.",
+        "scope": "resourceGroup"
+      },
+      {
+        "value": "Microsoft.Storage/storageAccounts/encryptionScopes/read",
+        "use_case": "Use to create an encryption scope at the container level in a storage account created by Rubrik to store the archived snapshots.",
+        "scope": "resourceGroup"
+      },
+      {
+        "value": "Microsoft.Storage/storageAccounts/encryptionScopes/write",
+        "use_case": "Use to create an encryption scope at the container level in a storage account created by Rubrik to store the archived snapshots.",
+        "scope": "resourceGroup"
+      },
+      {
+        "value": "Microsoft.KeyVault/vaults/read",
+        "use_case": "Use to list all the Key Vaults available in a region to choose the key.",
+        "scope": "resourceGroup"
+      },
+      {
+        "value": "Microsoft.KeyVault/vaults/keys/read",
+        "use_case": "Use to list the keys in a Key Vault to choose the key for encrypting the data using serverside encryption and customer-managed key.",
+        "scope": "resourceGroup"
+      },
+      {
+        "value": "Microsoft.Storage/storageAccounts/blobServices/read",
+        "use_case": "Use to enable versioning on storage accounts and reading blob service properties of a storage account.",
+        "scope": "resourceGroup"
+      },
+      {
+        "value": "Microsoft.Storage/storageAccounts/blobServices/write",
+        "use_case": "Enabling versioning on storage accounts and reading blob service properties of a storage account.",
+        "scope": "resourceGroup"
+      },
+      {
+        "value": "Microsoft.Storage/storageAccounts/blobServices/generateUserDelegationKey/action",
+        "use_case": "Enabling AAD authentication during archival in storage account.",
+        "scope": "resourceGroup"
+      }
+    ],
+    "NotActions": null,
+    "DataActions": [
+      {
+        "value": "Microsoft.Storage/storageAccounts/blobServices/containers/blobs/immutableStorage/runAsSuperUser/action",
+        "use_case": "Use to set blob version-level immutability",
+        "scope": "resourceGroup"
+      },
+      {
+        "value": "Microsoft.Storage/storageAccounts/blobServices/containers/blobs/delete",
+        "use_case": "Creating writing and deleting page blobs during the cross-region replication.",
+        "scope": "resourceGroup"
+      },
+      {
+        "value": "Microsoft.Storage/storageAccounts/blobServices/containers/blobs/write",
+        "use_case": "Creating writing and deleting page blobs during the cross-region replication.",
+        "scope": "resourceGroup"
+      },
+      {
+        "value": "Microsoft.Storage/storageAccounts/blobServices/containers/blobs/read",
+        "use_case": "Creating writing and deleting page blobs during the cross-region replication.",
+        "scope": "resourceGroup"
+      },
+      {
+        "value": "Microsoft.Storage/storageAccounts/blobServices/containers/blobs/deleteBlobVersion/action",
+        "use_case": "Deleting blob versions after their expiry in the storage account.",
+        "scope": "resourceGroup"
+      }
+    ],
+    "NotDataActions": null
+  }
+]

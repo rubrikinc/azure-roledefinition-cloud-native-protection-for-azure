@@ -1,0 +1,113 @@
+[
+  {
+		"Actions": [
+			{
+				"value": "Microsoft.Compute/disks/*",
+				"scope": "subscription"
+			},
+      {
+				"value": "Microsoft.Compute/skus/read",
+				"scope": "subscription"
+			},
+      {
+				"value": "Microsoft.Compute/virtualMachines/delete",
+				"scope": "subscription"
+			},
+      {
+				"value": "Microsoft.Compute/virtualMachines/read",
+				"scope": "subscription"
+			},
+      {
+				"value": "Microsoft.Compute/virtualMachines/write",
+				"scope": "subscription"
+			},
+      {
+				"value": "Microsoft.Network/networkInterfaces/delete",
+				"scope": "subscription"
+			},
+      {
+				"value": "Microsoft.Network/networkInterfaces/ipconfigurations/read",
+				"scope": "subscription"
+			},
+      {
+				"value": "Microsoft.Network/networkInterfaces/join/action",
+				"scope": "subscription"
+			},
+      {
+				"value": "Microsoft.Network/networkInterfaces/read",
+				"scope": "subscription"
+			},
+      {
+				"value": "Microsoft.Network/networkInterfaces/write",
+				"scope": "subscription"
+			},
+      {
+				"value": "Microsoft.Network/networkSecurityGroups/join/action",
+				"scope": "subscription"
+			},
+      {
+				"value": "Microsoft.Network/networkSecurityGroups/read",
+				"scope": "subscription"
+			},
+      {
+				"value": "Microsoft.Network/virtualNetworks/read",
+				"scope": "subscription"
+			},
+      {
+				"value": "Microsoft.Network/virtualNetworks/subnets/read",
+				"scope": "subscription"
+			},
+      {
+				"value": "Microsoft.Network/virtualNetworks/subnets/join/action",
+				"scope": "subscription"
+			},
+      {
+				"value": "Microsoft.Resources/checkResourceName/action",
+				"scope": "subscription"
+			},
+      {
+				"value": "Microsoft.Resources/subscriptions/locations/read",
+				"scope": "subscription"
+			},
+      {
+				"value": "Microsoft.Resources/subscriptions/resourceGroups/read",
+				"scope": "subscription"
+			},
+      {
+				"value": "Microsoft.Resources/subscriptions/resourceGroups/resources/read",
+				"scope": "subscription"
+			},
+      {
+				"value": "Microsoft.Resources/subscriptions/resourceGroups/write",
+				"scope": "subscription"
+			},
+      {
+				"value": "Microsoft.Resources/subscriptions/resources/read",
+				"scope": "subscription"
+			},
+      {
+				"value": "Microsoft.Storage/storageAccounts/listkeys/action",
+				"scope": "subscription"
+			},
+      {
+				"value": "Microsoft.Storage/storageAccounts/read",
+				"scope": "subscription"
+			},
+      {
+				"value": "Microsoft.Storage/storageAccounts/blobServices/containers/read",
+				"scope": "subscription"
+			},
+      {
+				"value": "Microsoft.Storage/storageAccounts/blobServices/containers/write",
+				"scope": "subscription"
+			},
+      {
+				"value": "Microsoft.Storage/storageAccounts/blobServices/containers/delete",
+				"scope": "subscription"
+			}
+    ],
+    "NotActions": null,
+		"DataActions": [],
+		"NotDataActions": null
+  }
+]

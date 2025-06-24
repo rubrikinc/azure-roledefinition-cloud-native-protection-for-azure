@@ -1,0 +1,54 @@
+[
+  {
+    "Actions": [
+      {
+        "value": "Microsoft.Network/virtualNetworks/write",
+        "scope": "resourceGroup",
+        "use_case": "Creates or updates a virtual network."
+      },
+      {
+        "value": "Microsoft.Network/virtualNetworks/read",
+        "scope": "resourceGroup",
+        "use_case": "Returns the properties of a virtual network or lists virtual networks."
+      },
+      {
+        "value": "Microsoft.Network/virtualNetworks/delete",
+        "scope": "resourceGroup",
+        "use_case": "Deletes a virtual network."
+      },
+      {
+        "value": "Microsoft.Network/networkSecurityGroups/write",
+        "scope": "resourceGroup",
+        "use_case": "Creates or updates a network security group."
+      },
+      {
+        "value": "Microsoft.Network/networkSecurityGroups/read",
+        "scope": "resourceGroup",
+        "use_case": "Returns the properties of a network security group or lists network security groups."
+      },
+      {
+        "value": "Microsoft.Network/networkSecurityGroups/delete",
+        "scope": "resourceGroup",
+        "use_case": "Deletes a network security group."
+      },
+      {
+        "value": "Microsoft.Network/virtualNetworks/subnets/write",
+        "scope": "resourceGroup",
+        "use_case": "Creates or updates a subnet within a virtual network."
+      },
+      {
+        "value": "Microsoft.Network/virtualNetworks/subnets/read",
+        "scope": "resourceGroup",
+        "use_case": "Returns the properties of a subnet or lists subnets within a virtual network."
+      },
+      {
+        "value": "Microsoft.Network/virtualNetworks/subnets/delete",
+        "scope": "resourceGroup",
+        "use_case": "Deletes a subnet from a virtual network."
+      }
+    ],
+    "NotActions": null,
+    "DataActions": null,
+    "NotDataActions": null
+  }
+]

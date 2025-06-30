@@ -1,0 +1,45 @@
+[
+  {
+		"Actions": [
+			{
+				"value": "Microsoft.NetApp/*/read",
+				"scope": "subscription"
+			},
+      {
+				"value": "Microsoft.NetApp/netAppAccounts/capacityPools/volumes/snapshots/write",
+				"scope": "subscription"
+			},
+			{
+				"value": "Microsoft.NetApp/netAppAccounts/capacityPools/volumes/snapshots/delete",
+				"scope": "subscription"
+			},
+      {
+				"value": "Microsoft.Compute/virtualMachines/read",
+				"scope": "subscription"
+			},
+      {
+				"value": "Microsoft.Compute/snapshots/read",
+				"scope": "subscription"
+			},
+      {
+				"value": "Microsoft.Compute/snapshots/write",
+				"scope": "subscription"
+			},
+      {
+				"value": "Microsoft.Compute/snapshots/delete",
+				"scope": "subscription"
+			},
+      {
+				"value": "Microsoft.Compute/disks/read",
+				"scope": "subscription"
+			},
+      {
+				"value": "Microsoft.Insights/Metrics/Read",
+				"scope": "subscription"
+			}
+    ],
+    "NotActions": null,
+		"DataActions": [],
+		"NotDataActions": null
+  }
+]

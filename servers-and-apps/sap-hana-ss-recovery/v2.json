@@ -1,0 +1,25 @@
+[
+  {
+		"Actions": [
+			{
+				"value": "Microsoft.NetApp/netAppAccounts/capacityPools/volumes/write",
+				"scope": "subscription"
+			},
+      {
+				"value": "Microsoft.Compute/disks/write",
+				"scope": "subscription"
+			},
+			{
+				"value": "Microsoft.Compute/virtualMachines/write",
+				"scope": "subscription"
+			},
+      {
+				"value": "Microsoft.Compute/disks/delete",
+				"scope": "subscription"
+			}
+    ],
+    "NotActions": null,
+		"DataActions": [],
+		"NotDataActions": null
+  }
+]

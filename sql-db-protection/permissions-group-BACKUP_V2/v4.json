@@ -1,0 +1,35 @@
+[
+  {
+    "Actions": [
+      {
+        "value": "Microsoft.Logic/workflows/triggers/run/action",
+        "use_case": "Running a logic app.",
+        "scope": "subscription"
+      },
+      {
+        "value": "Microsoft.Logic/workflows/runs/read",
+        "use_case": "Reading a logic app run status.",
+        "scope": "subscription"
+      },
+      {
+        "value": "Microsoft.Logic/workflows/read",
+        "use_case": "Reading a logic app definition.",
+        "scope": "subscription"
+      },
+      {
+        "value": "Microsoft.Web/connections/read",
+        "use_case": "Reading SQL connection used in logic app.",
+        "scope": "subscription"
+      },
+      {
+        "value": "Microsoft.Sql/servers/databases/transparentDataEncryption/read",
+        "use_case": "Reading SQL DB TDE information.",
+        "scope": "subscription"
+      }
+    ],
+    "NotActions": null,
+    "DataActions": null,
+    "NotDataActions": null
+  }
+]
+

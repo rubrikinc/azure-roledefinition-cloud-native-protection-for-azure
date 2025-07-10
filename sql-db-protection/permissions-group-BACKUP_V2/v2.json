@@ -1,0 +1,20 @@
+[
+  {
+    "Actions": [
+      {
+        "value": "Microsoft.Resources/subscriptions/resourceGroups/write",
+        "use_case": "Creating a resource group.",
+        "scope": "subscription"
+      },
+      {
+        "value": "Microsoft.Logic/workflows/triggers/run/action",
+        "use_case": "Running a logic app.",
+        "scope": "subscription"
+      }
+    ],
+    "NotActions": null,
+    "DataActions": null,
+    "NotDataActions": null
+  }
+]
+

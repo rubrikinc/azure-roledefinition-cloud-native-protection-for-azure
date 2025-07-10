@@ -47,24 +47,25 @@
         "use_case": "Deletes a subnet from a virtual network."
       },
       {
-	value:   "Microsoft.Resources/deployments/read",
-	scope:   permissions.ResourceGroup,
-	use_case: "Reads a deployment.",
+
+	"value":   "Microsoft.Resources/deployments/read",
+	"scope":   "resourceGroup",
+	"use_case": "Reads a deployment.",
       },
       {
-	value:   "Microsoft.Resources/deployments/write",
-	scope:   permissions.ResourceGroup,
-	use_case: "Creates a deployment or updates an existing deployment.",
+	"value":   "Microsoft.Resources/deployments/write",
+	"scope":   "resourceGroup",
+	"use_case": "Creates a deployment or updates an existing deployment.",
       },
       {
-	value:   "Microsoft.Resources/deployments/delete",
-	scope:   permissions.ResourceGroup,
-	use_case: "Deletes a deployment.",
+	"value":   "Microsoft.Resources/deployments/delete",
+	"scope":   "resourceGroup",
+	"use_case": "Deletes a deployment.",
       },
       {
-	value:   "Microsoft.Resources/deployments/operationstatuses/read",
-	scope:   permissions.ResourceGroup,
-	use_case: "Reads the status of a deployment operation.",
+	"value":   "Microsoft.Resources/deployments/operationstatuses/read",
+	"scope":   "resourceGroup",
+	"use_case": "Reads the status of a deployment operation.",
       },
     ],
     "NotActions": null,

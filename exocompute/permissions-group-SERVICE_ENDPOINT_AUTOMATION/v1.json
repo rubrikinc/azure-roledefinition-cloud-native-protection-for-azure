@@ -1,0 +1,14 @@
+[
+  {
+    "Actions": [
+      {
+        "value": "Microsoft.Network/virtualNetworks/subnets/joinViaServiceEndpoint/Action",
+        "use_case": "Required to link a virtual network to a resource via service endpoint.",
+        "scope": "subscription"
+      }
+    ],
+    "NotActions": null,
+    "DataActions": null,
+    "NotDataActions": null
+  }
+]

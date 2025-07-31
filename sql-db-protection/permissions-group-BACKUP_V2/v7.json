@@ -1,0 +1,70 @@
+[
+  {
+    "Actions": [
+      {
+        "value": "Microsoft.Sql/servers/databases/transparentDataEncryption/read",
+        "use_case": "Reading SQL DB TDE information.",
+        "scope": "subscription"
+      },
+      {
+        "value": "Microsoft.Sql/servers/databases/write",
+        "use_case": "Needed for running copy operation on source Database.",
+        "scope": "subscription"
+      },
+      {
+        "value": "Microsoft.Sql/servers/write",
+        "use_case": "Create server for DB copy operation.",
+        "scope": "resourceGroup"
+      },
+      {
+        "value": "Microsoft.Sql/servers/delete",
+        "use_case": "Delete server.",
+        "scope": "resourceGroup"
+      },
+      {
+        "value": "Microsoft.Sql/servers/databases/delete",
+        "use_case": "Delete copied database after backup is done",
+        "scope": "resourceGroup"
+      },
+      {
+        "value": "Microsoft.Sql/servers/privateEndpointConnectionsApproval/action",
+        "use_case": "Approve private endpoint connection on server if required.",
+        "scope": "resourceGroup"
+      },
+      {
+        "value": "Microsoft.Sql/servers/firewallRules/read",
+        "use_case": "Read firewall rules for the SQL server",
+        "scope": "resourceGroup"
+      },
+      {
+        "value": "Microsoft.Sql/servers/firewallRules/write",
+        "use_case": "Create firewall rules for the SQL server",
+        "scope": "resourceGroup"
+      },
+      {
+        "value": "Microsoft.Sql/servers/firewallRules/delete",
+        "use_case": "Delete firewall rules for the SQL server",
+        "scope": "resourceGroup"
+      },
+      {
+        "value": "Microsoft.Sql/servers/virtualNetworkRules/read",
+        "use_case": "Read virtual network rules for the SQL server",
+        "scope": "resourceGroup"
+      },
+      {
+        "value": "Microsoft.Sql/servers/virtualNetworkRules/write",
+        "use_case": "Create virtual network rules for the SQL server",
+        "scope": "resourceGroup"
+      },
+      {
+        "value": "Microsoft.Sql/servers/virtualNetworkRules/delete",
+        "use_case": "Delete virtual network rules for the SQL server",
+        "scope": "resourceGroup"
+      }
+    ],
+    "NotActions": null,
+    "DataActions": null,
+    "NotDataActions": null
+  }
+]
+

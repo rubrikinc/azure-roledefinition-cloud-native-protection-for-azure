@@ -1,0 +1,34 @@
+[
+  {
+    "Actions": [
+      {
+        "value": "Microsoft.Network/privateDnsZones/read",
+        "use_case": "Returns the properties of a private DNS zone or lists private DNS zones.",
+        "scope": "subscription"
+      },
+      {
+        "value": "Microsoft.Network/privateDnsZones/write",
+        "use_case": "For creating or updating a private DNS zone.",
+        "scope": "subscription"
+      },
+      {
+        "value": "Microsoft.Network/privateDnsZones/A/read",
+        "use_case": "For reading the DNS record of the AKS API server from the private DNS zone.",
+        "scope": "subscription"
+      },
+      {
+        "value": "Microsoft.Network/privateDnsZones/A/write",
+        "use_case": "For adding the DNS record of the AKS API server to the private DNS zone.",
+        "scope": "subscription"
+      },
+      {
+        "value": "Microsoft.Network/privateDnsZones/virtualNetworkLinks/read",
+        "use_case": "Returns the properties of a virtual network link or lists virtual network links.",
+        "scope": "subscription"
+      }
+    ],
+    "NotActions": null,
+    "DataActions": null,
+    "NotDataActions": null
+  }
+]

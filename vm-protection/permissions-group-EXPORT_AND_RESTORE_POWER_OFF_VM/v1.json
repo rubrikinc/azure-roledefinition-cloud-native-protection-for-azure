@@ -1,0 +1,24 @@
+[
+  {
+    "Actions": [
+      {
+        "value": "Microsoft.Compute/virtualMachines/powerOff/action",
+        "scope": "subscription",
+        "use_case": "Use to power off virtual machine."
+      },
+      {
+        "value": "Microsoft.Network/networkSecurityGroups/write",
+        "scope": "subscription",
+        "use_case": "Use to create network security group during export."
+      },
+      {
+        "value": "Microsoft.Network/networkSecurityGroups/delete",
+        "scope": "subscription",
+        "use_case": "Use to delete network security group during export."
+      }
+    ],
+    "NotActions": null,
+    "DataActions": null,
+    "NotDataActions": null
+  }
+]

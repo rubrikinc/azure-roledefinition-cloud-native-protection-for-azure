@@ -1,0 +1,74 @@
+[
+  {
+    "Actions": [
+      {
+        "value": "Microsoft.Network/virtualNetworks/write",
+        "use_case": "Creates or updates a virtual network.",
+        "scope": "resourceGroup"
+      },
+      {
+        "value": "Microsoft.Network/virtualNetworks/read",
+        "use_case": "Returns the properties of a virtual network or lists virtual networks.",
+        "scope": "resourceGroup"
+      },
+      {
+        "value": "Microsoft.Network/networkSecurityGroups/write",
+        "use_case": "Creates or updates a network security group.",
+        "scope": "resourceGroup"
+      },
+      {
+        "value": "Microsoft.Network/networkSecurityGroups/read",
+        "use_case": "Returns the properties of a network security group or lists network security groups.",
+        "scope": "resourceGroup"
+      },
+      {
+        "value": "Microsoft.Network/virtualNetworks/subnets/write",
+        "use_case": "Creates or updates a subnet within a virtual network.",
+        "scope": "resourceGroup"
+      },
+      {
+        "value": "Microsoft.Network/virtualNetworks/subnets/read",
+        "use_case": "Returns the properties of a subnet or lists subnets within a virtual network.",
+        "scope": "resourceGroup"
+      },
+      {
+        "value": "Microsoft.Resources/deployments/read",
+        "use_case": "Reads a deployment.",
+        "scope": "resourceGroup"
+      },
+      {
+        "value": "Microsoft.Resources/deployments/write",
+        "use_case": "Creates a deployment or updates an existing deployment.",
+        "scope": "resourceGroup"
+      },
+      {
+        "value": "Microsoft.Resources/deployments/operationstatuses/read",
+        "use_case": "Reads the status of a deployment operation.",
+        "scope": "resourceGroup"
+      },
+      {
+        "value": "Microsoft.Network/networkSecurityGroups/join/action",
+        "use_case": "Join network security groups.",
+        "scope": "resourceGroup"
+      },
+      {
+        "value": "Microsoft.Network/virtualNetworks/subnets/join/action",
+        "use_case": "Join virtual network subnets.",
+        "scope": "resourceGroup"
+      },
+      {
+        "value": "Microsoft.Network/networkSecurityGroups/securityRules/read",
+        "use_case": "Read network security group security rules.",
+        "scope": "resourceGroup"
+      },
+      {
+        "value": "Microsoft.Network/networkSecurityGroups/securityRules/write",
+        "use_case": "Write network security group security rules.",
+        "scope": "resourceGroup"
+      }
+    ],
+    "NotActions": null,
+    "DataActions": null,
+    "NotDataActions": null
+  }
+]

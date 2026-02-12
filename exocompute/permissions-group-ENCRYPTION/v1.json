@@ -1,0 +1,14 @@
+[
+  {
+    "Actions": [
+      {
+        "value": "Microsoft.Compute/diskEncryptionSets/read",
+        "use_case": "Required to list disk encryption sets for SSE-CMK encrypted disks.",
+        "scope": "subscription"
+      }
+    ],
+    "NotActions": null,
+    "DataActions": null,
+    "NotDataActions": null
+  }
+]

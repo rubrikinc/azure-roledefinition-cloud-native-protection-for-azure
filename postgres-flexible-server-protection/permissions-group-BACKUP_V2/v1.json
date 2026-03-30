@@ -4,37 +4,37 @@
       {
         "value": "Microsoft.DBforPostgreSQL/flexibleServers/write",
         "use_case": "Provisioning a temporary flexible server via point-in-time restore in the Rubrik-managed resource group.",
-        "scope": "resource_group"
+        "scope": "resourceGroup"
       },
       {
         "value": "Microsoft.DBforPostgreSQL/flexibleServers/delete",
         "use_case": "Deleting the temporary flexible server after backup data extraction is complete.",
-        "scope": "resource_group"
+        "scope": "resourceGroup"
       },
       {
         "value": "Microsoft.DBforPostgreSQL/flexibleServers/firewallRules/read",
         "use_case": "Retrieving the list of firewall rules for the specified flexible server.",
-        "scope": "resource_group"
+        "scope": "resourceGroup"
       },
       {
         "value": "Microsoft.DBforPostgreSQL/flexibleServers/firewallRules/write",
         "use_case": "Creating firewall rules on the source server to allow Exocompute pod access when using public access.",
-        "scope": "resource_group"
+        "scope": "resourceGroup"
       },
       {
         "value": "Microsoft.DBforPostgreSQL/flexibleServers/firewallRules/delete",
         "use_case": "Removing firewall rules from the server during teardown.",
-        "scope": "resource_group"
+        "scope": "resourceGroup"
       },
       {
         "value": "Microsoft.ManagedIdentity/userAssignedIdentities/read",
         "use_case": "Read the properties of the User-Assigned Managed Identity (UMI) before assigning it.",
-        "scope": "resource_group"
+        "scope": "resourceGroup"
       },
       {
         "value": "Microsoft.ManagedIdentity/userAssignedIdentities/assign/action",
         "use_case": "Assign the UMI to the target Azure Postgres flexible server, giving it an identity to access Key Vault.",
-        "scope": "resource_group"
+        "scope": "resourceGroup"
       }
     ],
     "NotActions": null,

@@ -1,0 +1,14 @@
+[
+  {
+    "Actions": [
+      {
+        "value": "Microsoft.DBforPostgreSQL/flexibleServers/write",
+        "use_case": "Provisioning a temporary flexible server via point-in-time restore in the Rubrik-managed resource group.",
+        "scope": "subscription"
+      }
+    ],
+    "NotActions": null,
+    "DataActions": null,
+    "NotDataActions": null
+  }
+]

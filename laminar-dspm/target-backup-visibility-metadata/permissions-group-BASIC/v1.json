@@ -1,0 +1,40 @@
+[
+  {
+    "Actions": [
+      {
+        "value": "*/read",
+        "use_case": "Read resources metadata.",
+        "scope": "subscription"
+      },
+      {
+        "value": "Microsoft.Sql/managedInstances/databases/readBackups/action",
+        "use_case": "Restore managed instance backup before classification.",
+        "scope": "subscription"
+      },
+      {
+        "value": "Microsoft.Compute/disks/beginGetAccess/action",
+        "use_case": "Use to read disks backups.",
+        "scope": "subscription"
+      },
+      {
+        "value": "Microsoft.Storage/storageAccounts/blobServices/generateUserDelegationKey/action",
+        "use_case": "Enabling AAD authentication for blob access.",
+        "scope": "subscription"
+      },
+      {
+        "value": "*",
+        "use_case": "Manage resources on dedicated resource group.",
+        "scope": "resourceGroup"
+      }
+    ],
+    "NotActions": null,
+    "DataActions": [
+      {
+        "value": "Microsoft.Storage/storageAccounts/blobServices/containers/blobs/read",
+        "use_case": "Use to get access to blobs for listing.",
+        "scope": "subscription"
+      }
+    ],
+    "NotDataActions": null
+  }
+]

@@ -1,0 +1,19 @@
+[
+  {
+    "Actions": [
+      {
+        "value": "*/read",
+        "use_case": "Read resources metadata.",
+        "scope": "subscription"
+      },
+      {
+        "value": "*",
+        "use_case": "Manage resources on dedicated resource group.",
+        "scope": "resourceGroup"
+      }
+    ],
+    "NotActions": null,
+    "DataActions": null,
+    "NotDataActions": null
+  }
+]

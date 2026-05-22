@@ -3,14 +3,17 @@
     "Actions": [
       {
         "value": "Microsoft.Storage/storageAccounts/write",
+        "use_case": "Provision a temporary storage account used to stage files extracted from a snapshot during file-level recovery.",
         "scope": "subscription"
       },
       {
         "value": "Microsoft.Storage/storageAccounts/blobServices/containers/write",
+        "use_case": "Create the blob container that holds files extracted from the snapshot for download by the user.",
         "scope": "subscription"
       },
       {
         "value": "Microsoft.Storage/storageAccounts/blobServices/containers/delete",
+        "use_case": "Delete the staging blob container after the file-level recovery session completes.",
         "scope": "subscription"
       }
     ],
@@ -18,10 +21,12 @@
     "DataActions": [
       {
         "value": "Microsoft.Storage/storageAccounts/blobServices/containers/blobs/write",
+        "use_case": "Write extracted files into the staging container so the user can download them.",
         "scope": "subscription"
       },
       {
         "value": "Microsoft.Storage/storageAccounts/blobServices/containers/blobs/delete",
+        "use_case": "Delete the staged files after the recovery session completes or expires.",
         "scope": "subscription"
       }
     ],

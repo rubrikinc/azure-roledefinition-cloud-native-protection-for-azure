@@ -1,61 +1,74 @@
 [
     {
-      "Actions": [
-        {
-          "value": "Microsoft.Compute/disks/write",
-          "scope": "subscription"
-        },
-        {
-          "value": "Microsoft.Compute/disks/delete",
-          "scope": "subscription"
-        },
-        {
-          "value": "Microsoft.Compute/virtualMachines/delete",
-          "scope": "subscription"
-        },
-        {
-          "value": "Microsoft.Compute/virtualMachines/powerOff/action",
-          "scope": "subscription"
-        },
-        {
-          "value": "Microsoft.Compute/virtualMachines/write",
-          "scope": "subscription"
-        },
-        {
-          "value": "Microsoft.Network/networkInterfaces/delete",
-          "scope": "subscription"
-        },
-        {
-          "value": "Microsoft.Network/networkInterfaces/write",
-          "scope": "subscription"
-        },
-        {
-          "value": "Microsoft.KeyVault/vaults/deploy/action",
-          "scope": "subscription"
-        },
-        {
-          "value": "Microsoft.Compute/virtualMachines/extensions/write",
-          "scope": "subscription"
-        },
-        {
-          "value": "Microsoft.Network/networkSecurityGroups/write",
-          "scope": "subscription"
-        },
-        {
-          "value": "Microsoft.Network/networkSecurityGroups/delete",
-          "scope": "subscription"
-        },
-        {
-          "value": "Microsoft.Compute/virtualMachines/start/action",
-          "scope": "subscription"
-        },
-        {
-          "value": "Microsoft.KeyVault/vaults/read",
-          "scope": "subscription"
-        }
-      ],
-      "NotActions": null,
-      "DataActions": null,
-      "NotDataActions": null
+        "Actions": [
+            {
+                "value": "Microsoft.Compute/disks/write",
+                "use_case": "Create the managed disks that back the restored or exported VM from snapshot data.",
+                "scope": "subscription"
+            },
+            {
+                "value": "Microsoft.Compute/disks/delete",
+                "use_case": "Delete disks left behind by a failed export, or remove the original disks during an in-place restore.",
+                "scope": "subscription"
+            },
+            {
+                "value": "Microsoft.Compute/virtualMachines/delete",
+                "use_case": "Delete the original VM during in-place restore before recreating it from the snapshot.",
+                "scope": "subscription"
+            },
+            {
+                "value": "Microsoft.Compute/virtualMachines/powerOff/action",
+                "use_case": "Power off the source VM before in-place restore so its disks can be detached and replaced.",
+                "scope": "subscription"
+            },
+            {
+                "value": "Microsoft.Compute/virtualMachines/write",
+                "use_case": "Provision the restored or exported VM and attach its disks.",
+                "scope": "subscription"
+            },
+            {
+                "value": "Microsoft.Network/networkInterfaces/delete",
+                "use_case": "Delete network interfaces from the original VM during in-place restore.",
+                "scope": "subscription"
+            },
+            {
+                "value": "Microsoft.Network/networkInterfaces/write",
+                "use_case": "Create or attach network interfaces for the restored or exported VM.",
+                "scope": "subscription"
+            },
+            {
+                "value": "Microsoft.KeyVault/vaults/deploy/action",
+                "use_case": "Reference Key Vault secrets when deploying a VM that uses Azure Disk Encryption (ADE) keys.",
+                "scope": "subscription"
+            },
+            {
+                "value": "Microsoft.Compute/virtualMachines/extensions/write",
+                "use_case": "Reinstall VM extensions (such as the Azure Disk Encryption extension) on the restored VM.",
+                "scope": "subscription"
+            },
+            {
+                "value": "Microsoft.Network/networkSecurityGroups/write",
+                "use_case": "Create or update a network security group for the restored or exported VM.",
+                "scope": "subscription"
+            },
+            {
+                "value": "Microsoft.Network/networkSecurityGroups/delete",
+                "use_case": "Remove the original network security group during in-place restore.",
+                "scope": "subscription"
+            },
+            {
+                "value": "Microsoft.Compute/virtualMachines/start/action",
+                "use_case": "Power the restored or exported VM on after the restore completes.",
+                "scope": "subscription"
+            },
+            {
+                "value": "Microsoft.KeyVault/vaults/read",
+                "use_case": "Read Key Vault metadata to locate the ADE key associated with the restored VM.",
+                "scope": "subscription"
+            }
+        ],
+        "NotActions": null,
+        "DataActions": null,
+        "NotDataActions": null
     }
-  ]
+]

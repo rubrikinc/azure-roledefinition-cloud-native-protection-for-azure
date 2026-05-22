@@ -9,7 +9,11 @@
 				"value": "Microsoft.Compute/disks/write",
 				"scope": "subscription"
 			},
-			{
+      {
+				"value": "Microsoft.Compute/disks/delete",
+				"scope": "subscription"
+			},			
+      {
 				"value": "Microsoft.Compute/locations/vmSizes/read",
 				"scope": "subscription"
 			},
@@ -147,6 +151,14 @@
 			},
       {
 				"value": "Microsoft.Compute/images/read",
+				"scope": "subscription"
+			},
+      {
+				"value": "Microsoft.Insights/metrics/read",
+				"scope": "subscription"
+			},
+      {
+				"value": "Microsoft.MarketplaceOrdering/offerTypes/publishers/offers/plans/agreements/read",
 				"scope": "subscription"
 			}
     ],

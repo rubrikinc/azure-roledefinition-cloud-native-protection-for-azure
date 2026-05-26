@@ -2,6 +2,21 @@
   {
     "Actions": [
       {
+        "value": "Microsoft.Resources/subscriptions/resourceGroups/read",
+        "use_case": "Getting or listing resource groups.",
+        "scope": "subscription"
+      },
+      {
+        "value": "Microsoft.DBforPostgreSQL/flexibleServers/read",
+        "use_case": "Retrieving the list of flexible servers or retrieving the properties for the specified flexible server.",
+        "scope": "subscription"
+      },
+      {
+        "value": "Microsoft.DBforPostgreSQL/checkNameAvailability/action",
+        "use_case": "Checking if a flexible server name is available before provisioning.",
+        "scope": "subscription"
+      },
+      {
         "value": "Microsoft.DBforPostgreSQL/flexibleServers/write",
         "use_case": "Provisioning a temporary flexible server via point-in-time restore in the Rubrik-managed resource group.",
         "scope": "resourceGroup"

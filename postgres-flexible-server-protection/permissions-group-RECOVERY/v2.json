@@ -1,0 +1,75 @@
+[
+  {
+    "Actions": [
+      {
+        "value": "Microsoft.DBforPostgreSQL/flexibleServers/write",
+        "use_case": "Provisioning the recovery flexible server (PITR create-new / LTR create-new) and PATCHing the SKU on bring-your-own-server.",
+        "scope": "subscription"
+      },
+      {
+        "value": "Microsoft.Network/virtualNetworks/read",
+        "use_case": "Listing virtual networks in the recovery wizard network configuration step.",
+        "scope": "subscription"
+      },
+      {
+        "value": "Microsoft.Network/virtualNetworks/subnets/read",
+        "use_case": "Listing subnets in the recovery wizard network configuration step.",
+        "scope": "subscription"
+      },
+      {
+        "value": "Microsoft.Network/virtualNetworks/subnets/join/action",
+        "use_case": "Delegating the recovery flexible server NIC into the customer-selected subnet (Azure requirement for VNet integration).",
+        "scope": "subscription"
+      },
+      {
+        "value": "Microsoft.Network/virtualNetworks/join/action",
+        "use_case": "Linking the customer's virtual network to the private DNS zone (Azure linked-scope check on virtualNetworkLinks/write; without this the LinkedAuthorizationFailed error fires before the server is provisioned).",
+        "scope": "subscription"
+      },
+      {
+        "value": "Microsoft.Network/privateDnsZones/read",
+        "use_case": "Validating the customer-supplied private DNS zone before provisioning.",
+        "scope": "subscription"
+      },
+      {
+        "value": "Microsoft.Network/privateDnsZones/join/action",
+        "use_case": "Attaching the recovery flexible server to the customer-selected private DNS zone (Azure requirement for VNet integration).",
+        "scope": "subscription"
+      },
+      {
+        "value": "Microsoft.Network/privateDnsZones/virtualNetworkLinks/read",
+        "use_case": "Idempotency check for the VNet-to-DNS-zone link before recreating it during recovery.",
+        "scope": "subscription"
+      },
+      {
+        "value": "Microsoft.Network/privateDnsZones/virtualNetworkLinks/write",
+        "use_case": "Creating the virtualNetworkLink that binds the recovery flexible server's VNet to the customer's private DNS zone (Azure auto-creates this link on first flex server provisioning into a zone).",
+        "scope": "subscription"
+      },
+      {
+        "value": "Microsoft.KeyVault/vaults/read",
+        "use_case": "Listing key vaults in the recovery wizard encryption configuration step.",
+        "scope": "subscription"
+      },
+      {
+        "value": "Microsoft.ManagedIdentity/userAssignedIdentities/read",
+        "use_case": "Listing user-assigned managed identities for customer-managed key encryption during recovery.",
+        "scope": "subscription"
+      },
+      {
+        "value": "Microsoft.ManagedIdentity/userAssignedIdentities/assign/action",
+        "use_case": "Assigning the customer-selected user-assigned managed identity to the recovery flexible server.",
+        "scope": "subscription"
+      }
+    ],
+    "NotActions": null,
+    "DataActions": [
+      {
+        "value": "Microsoft.KeyVault/vaults/keys/read",
+        "use_case": "Listing customer-managed keys in the recovery wizard encryption configuration step (Key Vault data plane action; required when the vault uses Azure RBAC authorization).",
+        "scope": "subscription"
+      }
+    ],
+    "NotDataActions": null
+  }
+]

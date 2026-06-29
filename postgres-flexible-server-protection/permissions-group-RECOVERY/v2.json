@@ -37,11 +37,6 @@
         "scope": "subscription"
       },
       {
-        "value": "Microsoft.Network/privateDnsZones/virtualNetworkLinks/read",
-        "use_case": "Idempotency check for the VNet-to-DNS-zone link before recreating it during recovery.",
-        "scope": "subscription"
-      },
-      {
         "value": "Microsoft.Network/privateDnsZones/virtualNetworkLinks/write",
         "use_case": "Creating the virtualNetworkLink that binds the recovery flexible server's VNet to the customer's private DNS zone (Azure auto-creates this link on first flex server provisioning into a zone).",
         "scope": "subscription"

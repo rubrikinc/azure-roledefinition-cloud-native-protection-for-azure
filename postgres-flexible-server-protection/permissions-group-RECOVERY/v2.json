@@ -37,6 +37,11 @@
         "scope": "subscription"
       },
       {
+        "value": "Microsoft.Network/privateDnsZones/virtualNetworkLinks/read",
+        "use_case": "Reading the VNet-to-DNS-zone link during recovery; Azure performs a read-check on the link before deciding to create or update it on the flex-server PUT. Validated against a real PUT against an empty DNS zone: removing this action fires AuthorizationFailed on Microsoft.Network/privateDnsZones/virtualNetworkLinks/read before the link is touched.",
+        "scope": "subscription"
+      },
+      {
         "value": "Microsoft.Network/privateDnsZones/virtualNetworkLinks/write",
         "use_case": "Creating the virtualNetworkLink that binds the recovery flexible server's VNet to the customer's private DNS zone (Azure auto-creates this link on first flex server provisioning into a zone).",
         "scope": "subscription"

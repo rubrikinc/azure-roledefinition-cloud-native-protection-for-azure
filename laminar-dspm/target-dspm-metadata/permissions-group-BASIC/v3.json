@@ -1,0 +1,70 @@
+[
+  {
+    "Actions": [
+      {
+        "value": "*/read",
+        "use_case": "Read resources metadata.",
+        "scope": "subscription"
+      },
+      {
+        "value": "Microsoft.Sql/managedInstances/databases/readBackups/action",
+        "use_case": "Restore managed instance backup before classification.",
+        "scope": "subscription"
+      },
+      {
+        "value": "Microsoft.Compute/disks/beginGetAccess/action",
+        "use_case": "Use to read disks backups.",
+        "scope": "subscription"
+      },
+      {
+        "value": "Microsoft.Storage/storageAccounts/blobServices/generateUserDelegationKey/action",
+        "use_case": "Enabling AAD authentication for blob access.",
+        "scope": "subscription"
+      },
+      {
+        "value": "Microsoft.Resources/deployments/*",
+        "use_case": "Deploy resources required from a deployment template.",
+        "scope": "resourceGroup"
+      },
+      {
+        "value": "Microsoft.Sql/servers/write",
+        "use_case": "Create SQL servers",
+        "scope": "resourceGroup"
+      },
+      {
+        "value": "Microsoft.Sql/servers/delete",
+        "use_case": "Delete SQL servers after scanning.",
+        "scope": "resourceGroup"
+      },
+      {
+        "value": "Microsoft.Sql/servers/virtualNetworkRules/write",
+        "use_case": "Manage access to virtual network rules for the sql servers",
+        "scope": "resourceGroup"
+      },
+      {
+        "value": "Microsoft.Sql/servers/databases/write",
+        "use_case": "Create SQL databases",
+        "scope": "resourceGroup"
+      },
+      {
+        "value": "Microsoft.Sql/servers/databases/backupShortTermRetentionPolicies/write",
+        "use_case": "Set backup short term retention policies for SQL databases.",
+        "scope": "resourceGroup"
+      },
+      {
+        "value": "Microsoft.Sql/servers/databases/delete",
+        "use_case": "Delete restored database after scanning.",
+        "scope": "resourceGroup"
+      }
+    ],
+    "NotActions": null,
+    "DataActions": [
+      {
+        "value": "Microsoft.Storage/storageAccounts/blobServices/containers/blobs/read",
+        "use_case": "Use to get access to blobs for listing.",
+        "scope": "subscription"
+      }
+    ],
+    "NotDataActions": null
+  }
+]

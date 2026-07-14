@@ -8,171 +8,212 @@
       },
       {
         "value": "Microsoft.Compute/locations/vmSizes/read",
+        "use_case": "List available VM sizes in a region for restore and export target selection.",
         "scope": "subscription"
       },
       {
         "value": "Microsoft.Compute/skus/read",
+        "use_case": "List available compute SKUs in a region for restore and export target selection.",
         "scope": "subscription"
       },
       {
         "value": "Microsoft.Compute/virtualMachines/instanceView/read",
+        "use_case": "Read the runtime instance view of a VM (power state, OS provisioning state) for backup planning.",
         "scope": "subscription"
       },
       {
         "value": "Microsoft.Compute/virtualMachines/read",
+        "use_case": "Discover protected VMs and read their configuration (disks, NICs, OS profile) for backup.",
         "scope": "subscription"
       },
       {
         "value": "Microsoft.Network/networkInterfaces/ipconfigurations/read",
+        "use_case": "Read NIC IP configuration so the restored VM can be re-attached to the original subnet and address.",
         "scope": "subscription"
       },
       {
         "value": "Microsoft.Network/networkInterfaces/read",
+        "use_case": "Discover the network interfaces attached to protected VMs.",
         "scope": "subscription"
       },
       {
         "value": "Microsoft.Network/networkSecurityGroups/read",
+        "use_case": "Read network security group rules associated with protected VMs for restore planning.",
         "scope": "subscription"
       },
       {
         "value": "Microsoft.Network/virtualNetworks/read",
+        "use_case": "Discover virtual networks available for restore and export targets.",
         "scope": "subscription"
       },
       {
         "value": "Microsoft.Network/virtualNetworks/subnets/read",
+        "use_case": "Discover subnets available for restore and export targets.",
         "scope": "subscription"
       },
       {
         "value": "Microsoft.Resources/checkResourceName/action",
+        "use_case": "Validate that a name (e.g. for a restore-target VM, disk, or storage account) is available before creation.",
         "scope": "subscription"
       },
       {
         "value": "Microsoft.Resources/subscriptions/locations/read",
+        "use_case": "List Azure regions available in the customer's subscription.",
         "scope": "subscription"
       },
       {
         "value": "Microsoft.Resources/subscriptions/resourceGroups/read",
+        "use_case": "List or get resource groups in the customer's subscription.",
         "scope": "subscription"
       },
       {
         "value": "Microsoft.Resources/subscriptions/resourceGroups/resources/read",
+        "use_case": "Enumerate resources within a resource group during discovery.",
         "scope": "subscription"
       },
       {
         "value": "Microsoft.Storage/storageAccounts/blobServices/containers/read",
+        "use_case": "List or read blob container metadata in storage accounts referenced for backup.",
         "scope": "subscription"
       },
       {
         "value": "Microsoft.Resources/subscriptions/resources/read",
+        "use_case": "Enumerate resources at the subscription level during discovery.",
         "scope": "subscription"
       },
       {
         "value": "Microsoft.Compute/availabilitySets/read",
+        "use_case": "Read availability set membership of source VMs so restored VMs can be placed back into the correct availability set.",
         "scope": "subscription"
       },
       {
         "value": "Microsoft.Storage/storageAccounts/read",
+        "use_case": "Returns the list of storage accounts or gets the properties for the specified storage account.",
         "scope": "subscription"
       },
       {
         "value": "Microsoft.Compute/diskEncryptionSets/read",
+        "use_case": "Read disk encryption set metadata to identify the customer-managed key used to encrypt protected disks.",
         "scope": "subscription"
       },
       {
         "value": "Microsoft.Compute/galleries/images/versions/read",
+        "use_case": "Read shared gallery image version metadata for VMs that were provisioned from a gallery image.",
         "scope": "subscription"
       },
       {
         "value": "Microsoft.Compute/disks/beginGetAccess/action",
+        "use_case": "Generate a time-limited SAS URI to read disk data when taking a snapshot.",
         "scope": "subscription"
       },
       {
         "value": "Microsoft.Compute/disks/endGetAccess/action",
+        "use_case": "Revoke the SAS URI generated for snapshot read access once the snapshot is complete.",
         "scope": "subscription"
       },
       {
         "value": "Microsoft.Network/virtualNetworks/subnets/join/action",
+        "use_case": "Place a restored VM into an existing subnet.",
         "scope": "subscription"
       },
       {
         "value": "Microsoft.Network/networkInterfaces/join/action",
+        "use_case": "Attach a restored VM to an existing network interface.",
         "scope": "subscription"
       },
       {
-        "value":   "Microsoft.Compute/diskAccesses/read",
-        "scope":   "subscription",
+        "value": "Microsoft.Compute/diskAccesses/read",
+        "scope": "subscription",
         "use_case": "Required for linking a disk access resource to a managed disk snapshot."
       },
       {
         "value": "Microsoft.Compute/snapshots/read",
+        "use_case": "Read existing managed-disk snapshots created by Rubrik in the protection resource group.",
         "scope": "resourceGroup"
       },
       {
         "value": "Microsoft.Compute/snapshots/write",
+        "use_case": "Create a managed-disk snapshot from a protected VM's disk for backup.",
         "scope": "resourceGroup"
       },
       {
         "value": "Microsoft.Compute/snapshots/delete",
+        "use_case": "Delete expired or failed snapshots from the Rubrik protection resource group.",
         "scope": "resourceGroup"
       },
       {
         "value": "Microsoft.Compute/snapshots/beginGetAccess/action",
+        "use_case": "Generate a time-limited SAS URI to read snapshot data so it can be transferred to the backup destination.",
         "scope": "resourceGroup"
       },
       {
         "value": "Microsoft.Compute/snapshots/endGetAccess/action",
+        "use_case": "Revoke the SAS URI generated for snapshot data export once the transfer is complete.",
         "scope": "resourceGroup"
       },
       {
         "value": "Microsoft.Resources/subscriptions/resourceGroups/write",
+        "use_case": "Create the Rubrik protection resource group on first onboarding, or update tags.",
         "scope": "resourceGroup"
       },
       {
         "value": "Microsoft.Authorization/locks/write",
+        "use_case": "Apply a delete lock on the Rubrik protection resource group to prevent accidental removal.",
         "scope": "resourceGroup"
       },
       {
         "value": "Microsoft.Authorization/locks/delete",
+        "use_case": "Remove the Rubrik-managed lock on the protection resource group when offboarding the subscription.",
         "scope": "resourceGroup"
       },
       {
         "value": "Microsoft.Storage/storageAccounts/listServiceSas/action",
+        "use_case": "Generate a service SAS for the Rubrik staging storage account so data-plane components can access blobs.",
         "scope": "resourceGroup"
       },
       {
         "value": "Microsoft.Compute/disks/write",
+        "use_case": "Create managed disks in the Rubrik protection resource group during restore or export operations.",
         "scope": "resourceGroup"
       },
       {
         "value": "Microsoft.Compute/disks/delete",
+        "use_case": "Delete managed disks created in the Rubrik protection resource group during restore cleanup.",
         "scope": "resourceGroup"
       },
       {
         "value": "Microsoft.Network/networkInterfaces/delete",
+        "use_case": "Delete network interfaces created in the Rubrik protection resource group during restore cleanup.",
         "scope": "resourceGroup"
       },
       {
         "value": "Microsoft.Network/networkInterfaces/write",
+        "use_case": "Create network interfaces in the Rubrik protection resource group for restored or temporary VMs.",
         "scope": "resourceGroup"
       },
       {
         "value": "Microsoft.KeyVault/vaults/deploy/action",
+        "use_case": "Reference Key Vault secrets when deploying a VM that uses Azure Disk Encryption (ADE) keys.",
         "scope": "resourceGroup"
       },
       {
         "value": "Microsoft.Compute/virtualMachines/extensions/write",
+        "use_case": "Install or update VM extensions (such as the Azure Disk Encryption extension) on a restored or temporary VM.",
         "scope": "resourceGroup"
       },
       {
         "value": "Microsoft.Storage/storageAccounts/write",
+        "use_case": "Create or update the Rubrik staging storage account in the protection resource group.",
         "scope": "resourceGroup"
       },
       {
         "value": "Microsoft.Storage/storageAccounts/blobServices/containers/write",
+        "use_case": "Create the blob container used to stage backup data and restore artifacts.",
         "scope": "resourceGroup"
       },
       {
         "value": "Microsoft.Storage/storageAccounts/blobServices/containers/delete",
+        "use_case": "Delete the staging blob container after backup or restore artifacts are no longer needed.",
         "scope": "resourceGroup"
       },
       {
@@ -190,14 +231,17 @@
     "DataActions": [
       {
         "value": "Microsoft.Storage/storageAccounts/blobServices/containers/blobs/read",
+        "use_case": "Read backup data blobs from the Rubrik staging container.",
         "scope": "subscription"
       },
       {
         "value": "Microsoft.Storage/storageAccounts/blobServices/containers/blobs/write",
+        "use_case": "Write backup data blobs into the Rubrik staging container.",
         "scope": "resourceGroup"
       },
       {
         "value": "Microsoft.Storage/storageAccounts/blobServices/containers/blobs/delete",
+        "use_case": "Delete backup data blobs from the Rubrik staging container after they are no longer needed.",
         "scope": "resourceGroup"
       }
     ],

@@ -1,210 +1,260 @@
 [
   {
-		"Actions": [
-			{
-				"value": "Microsoft.Compute/disks/*",
-				"scope": "subscription"
-			},
-			{
-				"value": "Microsoft.Compute/locations/vmSizes/read",
-				"scope": "subscription"
-			},
+    "Actions": [
       {
-				"value": "Microsoft.Compute/skus/read",
-				"scope": "subscription"
-			},
+        "value": "Microsoft.Compute/disks/*",
+        "use_case": "Full management of managed disks attached to the Rubrik cluster VMs (create, read, update, delete, snapshot access).",
+        "scope": "subscription"
+      },
       {
-				"value": "Microsoft.Compute/snapshots/*",
-				"scope": "subscription"
-			},
+        "value": "Microsoft.Compute/locations/vmSizes/read",
+        "use_case": "List VM sizes available in the target region when sizing Rubrik cluster nodes.",
+        "scope": "subscription"
+      },
       {
-				"value": "Microsoft.Compute/virtualMachines/delete",
-				"scope": "subscription"
-			},
+        "value": "Microsoft.Compute/skus/read",
+        "use_case": "List compute SKUs available in the target region when sizing Rubrik cluster nodes.",
+        "scope": "subscription"
+      },
       {
-				"value": "Microsoft.Compute/virtualMachines/instanceView/read",
-				"scope": "subscription"
-			},	
+        "value": "Microsoft.Compute/snapshots/*",
+        "use_case": "Full management of disk snapshots used by the Rubrik cluster (create, read, delete, SAS access).",
+        "scope": "subscription"
+      },
       {
-				"value": "Microsoft.Compute/virtualMachines/powerOff/action",
-				"scope": "subscription"
-			},
+        "value": "Microsoft.Compute/virtualMachines/delete",
+        "use_case": "Delete Rubrik cluster VMs during scale-down, replacement, or teardown.",
+        "scope": "subscription"
+      },
       {
-				"value": "Microsoft.Compute/virtualMachines/read",
-				"scope": "subscription"
-			},
+        "value": "Microsoft.Compute/virtualMachines/instanceView/read",
+        "use_case": "Read the runtime instance view (power state, provisioning state) of Rubrik cluster VMs.",
+        "scope": "subscription"
+      },
       {
-				"value": "Microsoft.Compute/virtualMachines/restart/action",
-				"scope": "subscription"
-			},
+        "value": "Microsoft.Compute/virtualMachines/powerOff/action",
+        "use_case": "Power off Rubrik cluster VMs during maintenance, replacement, or teardown.",
+        "scope": "subscription"
+      },
       {
-				"value": "Microsoft.Compute/virtualMachines/start/action",
-				"scope": "subscription"
-			},
+        "value": "Microsoft.Compute/virtualMachines/read",
+        "use_case": "Read the configuration of Rubrik cluster VMs during management operations.",
+        "scope": "subscription"
+      },
       {
-				"value": "Microsoft.Compute/virtualMachines/write",
-				"scope": "subscription"
-			},
+        "value": "Microsoft.Compute/virtualMachines/restart/action",
+        "use_case": "Restart Rubrik cluster VMs during upgrade or recovery operations.",
+        "scope": "subscription"
+      },
       {
-				"value": "Microsoft.Network/applicationSecurityGroups/joinIpConfiguration/action",
-				"scope": "subscription"
-			},
+        "value": "Microsoft.Compute/virtualMachines/start/action",
+        "use_case": "Power on Rubrik cluster VMs during bootstrap or recovery from a stopped state.",
+        "scope": "subscription"
+      },
       {
-				"value": "Microsoft.Network/applicationSecurityGroups/joinNetworkSecurityRule/action",
-				"scope": "subscription"
-			},
+        "value": "Microsoft.Compute/virtualMachines/write",
+        "use_case": "Provision or update Rubrik cluster VMs.",
+        "scope": "subscription"
+      },
       {
-				"value": "Microsoft.Network/applicationSecurityGroups/listIpConfigurations/action",
-				"scope": "subscription"
-			},
+        "value": "Microsoft.Network/applicationSecurityGroups/joinIpConfiguration/action",
+        "use_case": "Add Rubrik cluster NIC IP configurations into an application security group.",
+        "scope": "subscription"
+      },
       {
-				"value": "Microsoft.Network/applicationSecurityGroups/read",
-				"scope": "subscription"
-			},
+        "value": "Microsoft.Network/applicationSecurityGroups/joinNetworkSecurityRule/action",
+        "use_case": "Reference an application security group from a network security rule applied to the Rubrik cluster.",
+        "scope": "subscription"
+      },
       {
-				"value": "Microsoft.Network/networkInterfaces/delete",
-				"scope": "subscription"
-			},
+        "value": "Microsoft.Network/applicationSecurityGroups/listIpConfigurations/action",
+        "use_case": "List IP configurations associated with an application security group used by the Rubrik cluster.",
+        "scope": "subscription"
+      },
       {
-				"value": "Microsoft.Network/networkInterfaces/ipconfigurations/read",
-				"scope": "subscription"
-			},
+        "value": "Microsoft.Network/applicationSecurityGroups/read",
+        "use_case": "Read application security groups associated with Rubrik cluster networking.",
+        "scope": "subscription"
+      },
       {
-				"value": "Microsoft.Network/networkInterfaces/join/action",
-				"scope": "subscription"
-			},
+        "value": "Microsoft.Network/networkInterfaces/delete",
+        "use_case": "Delete Rubrik cluster network interfaces during scale-down or teardown.",
+        "scope": "subscription"
+      },
       {
-				"value": "Microsoft.Network/networkInterfaces/read",
-				"scope": "subscription"
-			},
+        "value": "Microsoft.Network/networkInterfaces/ipconfigurations/read",
+        "use_case": "Read NIC IP configurations on Rubrik cluster nodes.",
+        "scope": "subscription"
+      },
       {
-				"value": "Microsoft.Network/networkInterfaces/write",
-				"scope": "subscription"
-			},
+        "value": "Microsoft.Network/networkInterfaces/join/action",
+        "use_case": "Attach Rubrik cluster VMs to existing network interfaces.",
+        "scope": "subscription"
+      },
       {
-				"value": "Microsoft.Network/networkSecurityGroups/join/action",
-				"scope": "subscription"
-			},
+        "value": "Microsoft.Network/networkInterfaces/read",
+        "use_case": "Discover and read network interfaces attached to Rubrik cluster nodes.",
+        "scope": "subscription"
+      },
       {
-				"value": "Microsoft.Network/networkSecurityGroups/read",
-				"scope": "subscription"
-			},
+        "value": "Microsoft.Network/networkInterfaces/write",
+        "use_case": "Create or update network interfaces for Rubrik cluster nodes.",
+        "scope": "subscription"
+      },
       {
-				"value": "Microsoft.Network/virtualNetworks/read",
-				"scope": "subscription"
-			},
+        "value": "Microsoft.Network/networkSecurityGroups/join/action",
+        "use_case": "Attach Rubrik cluster network interfaces to a network security group.",
+        "scope": "subscription"
+      },
       {
-				"value": "Microsoft.Network/virtualNetworks/subnets/read",
-				"scope": "subscription"
-			},
+        "value": "Microsoft.Network/networkSecurityGroups/read",
+        "use_case": "Read network security group rules applicable to the Rubrik cluster.",
+        "scope": "subscription"
+      },
       {
-				"value": "Microsoft.Network/virtualNetworks/subnets/join/action",
-				"scope": "subscription"
-			},
+        "value": "Microsoft.Network/virtualNetworks/read",
+        "use_case": "Discover virtual networks available for placing the Rubrik cluster.",
+        "scope": "subscription"
+      },
       {
-				"value": "Microsoft.Resources/checkResourceName/action",
-				"scope": "subscription"
-			},
+        "value": "Microsoft.Network/virtualNetworks/subnets/read",
+        "use_case": "Discover subnets available for placing Rubrik cluster nodes.",
+        "scope": "subscription"
+      },
       {
-				"value": "Microsoft.Resources/subscriptions/locations/read",
-				"scope": "subscription"
-			},
+        "value": "Microsoft.Network/virtualNetworks/subnets/join/action",
+        "use_case": "Place Rubrik cluster network interfaces into an existing subnet.",
+        "scope": "subscription"
+      },
       {
-				"value": "Microsoft.Resources/subscriptions/resourceGroups/read",
-				"scope": "subscription"
-			},
+        "value": "Microsoft.Resources/checkResourceName/action",
+        "use_case": "Validate names for Rubrik cluster resources before creation.",
+        "scope": "subscription"
+      },
       {
-				"value": "Microsoft.Resources/subscriptions/resourceGroups/resources/read",
-				"scope": "subscription"
-			},
+        "value": "Microsoft.Resources/subscriptions/locations/read",
+        "use_case": "List Azure regions available in the customer's subscription for cluster placement.",
+        "scope": "subscription"
+      },
       {
-				"value": "Microsoft.Resources/subscriptions/resourceGroups/write",
-				"scope": "subscription"
-			},
+        "value": "Microsoft.Resources/subscriptions/resourceGroups/read",
+        "use_case": "List or read resource groups in the customer's subscription.",
+        "scope": "subscription"
+      },
       {
-				"value": "Microsoft.Resources/subscriptions/resources/read",
-				"scope": "subscription"
-			},
+        "value": "Microsoft.Resources/subscriptions/resourceGroups/resources/read",
+        "use_case": "Enumerate resources within a resource group during cluster lifecycle operations.",
+        "scope": "subscription"
+      },
       {
-				"value": "Microsoft.KeyVault/vaults/deploy/action",
-				"scope": "subscription"
-			},
+        "value": "Microsoft.Resources/subscriptions/resourceGroups/write",
+        "use_case": "Create the resource group that hosts the Rubrik cluster.",
+        "scope": "subscription"
+      },
       {
-				"value": "Microsoft.Compute/virtualMachines/extensions/write",
-				"scope": "subscription"
-			},
+        "value": "Microsoft.Resources/subscriptions/resources/read",
+        "use_case": "Enumerate resources at the subscription level during cluster discovery and lifecycle.",
+        "scope": "subscription"
+      },
       {
-				"value": "Microsoft.Authorization/locks/*",
-				"scope": "subscription"
-			},
+        "value": "Microsoft.KeyVault/vaults/deploy/action",
+        "use_case": "Reference Key Vault secrets when deploying Rubrik cluster VMs that consume Key Vault-stored credentials.",
+        "scope": "subscription"
+      },
       {
-				"value": "Microsoft.Network/networkSecurityGroups/delete",
-				"scope": "subscription"
-			},
+        "value": "Microsoft.Compute/virtualMachines/extensions/write",
+        "use_case": "Install or update VM extensions on Rubrik cluster nodes during bootstrap and upgrade.",
+        "scope": "subscription"
+      },
       {
-				"value": "Microsoft.Network/networkSecurityGroups/write",
-				"scope": "subscription"
-			},
+        "value": "Microsoft.Authorization/locks/*",
+        "use_case": "Apply, read, and remove ARM resource locks on the Rubrik cluster's resource group to prevent accidental deletion.",
+        "scope": "subscription"
+      },
       {
-				"value": "Microsoft.Storage/storageAccounts/write",
-				"scope": "subscription"
-			},
+        "value": "Microsoft.Network/networkSecurityGroups/delete",
+        "use_case": "Delete network security groups created for the Rubrik cluster during teardown.",
+        "scope": "subscription"
+      },
       {
-				"value": "Microsoft.Storage/storageAccounts/listServiceSas/action",
-				"scope": "subscription"
-			},
+        "value": "Microsoft.Network/networkSecurityGroups/write",
+        "use_case": "Create or update network security groups for the Rubrik cluster.",
+        "scope": "subscription"
+      },
       {
-				"value": "Microsoft.Storage/storageAccounts/blobServices/containers/read",
-				"scope": "subscription"
-			},
+        "value": "Microsoft.Storage/storageAccounts/write",
+        "use_case": "Create or update storage accounts used as the Rubrik cluster backing store.",
+        "scope": "subscription"
+      },
       {
-				"value": "Microsoft.Storage/storageAccounts/blobServices/containers/write",
-				"scope": "subscription"
-			},
+        "value": "Microsoft.Storage/storageAccounts/listServiceSas/action",
+        "use_case": "Generate a service SAS for the cluster's backing storage account so cluster components can access blobs.",
+        "scope": "subscription"
+      },
       {
-				"value": "Microsoft.Storage/storageAccounts/blobServices/containers/delete",
-				"scope": "subscription"
-			},
+        "value": "Microsoft.Storage/storageAccounts/blobServices/containers/read",
+        "use_case": "List or read blob container metadata in the cluster's backing storage.",
+        "scope": "subscription"
+      },
       {
-				"value": "Microsoft.Compute/availabilitySets/read",
-				"scope": "subscription"
-			},
+        "value": "Microsoft.Storage/storageAccounts/blobServices/containers/write",
+        "use_case": "Create blob containers used by the Rubrik cluster as its data store.",
+        "scope": "subscription"
+      },
       {
-				"value": "Microsoft.Storage/storageAccounts/read",
-				"scope": "subscription"
-			},
+        "value": "Microsoft.Storage/storageAccounts/blobServices/containers/delete",
+        "use_case": "Delete blob containers when the cluster is decommissioned or storage is reconfigured.",
+        "scope": "subscription"
+      },
       {
-				"value": "Microsoft.Compute/diskEncryptionSets/read",
-				"scope": "subscription"
-			},
+        "value": "Microsoft.Compute/availabilitySets/read",
+        "use_case": "Read availability set configuration when placing Rubrik cluster VMs.",
+        "scope": "subscription"
+      },
       {
-				"value": "Microsoft.Compute/galleries/images/versions/read",
-				"scope": "subscription"
-			},
+        "value": "Microsoft.Storage/storageAccounts/read",
+        "use_case": "Read properties of storage accounts used as the Rubrik cluster backing store.",
+        "scope": "subscription"
+      },
       {
-				"value": "Microsoft.Storage/storageAccounts/listkeys/action",
-				"scope": "subscription"
-			},
+        "value": "Microsoft.Compute/diskEncryptionSets/read",
+        "use_case": "Read disk encryption set metadata to honor customer-managed keys for Rubrik cluster disks.",
+        "scope": "subscription"
+      },
       {
-				"value": "Microsoft.ManagedIdentity/userAssignedIdentities/read",
-				"scope": "subscription"
-			}
+        "value": "Microsoft.Compute/galleries/images/versions/read",
+        "use_case": "Read Rubrik cluster image versions from a shared image gallery during deployment or upgrade.",
+        "scope": "subscription"
+      },
+      {
+        "value": "Microsoft.Storage/storageAccounts/listkeys/action",
+        "use_case": "Required for accessing container for CCES. CCES needs storage container key during bootstrap.",
+        "scope": "subscription"
+      },
+      {
+        "value": "Microsoft.ManagedIdentity/userAssignedIdentities/read",
+        "use_case": "Read user-assigned managed identity properties before attaching them to Rubrik cluster VMs.",
+        "scope": "subscription"
+      }
     ],
     "NotActions": null,
-		"DataActions": [
-			{
-				"value": "Microsoft.Storage/storageAccounts/blobServices/containers/blobs/delete",
-				"scope": "subscription"
-			},
-			{
-				"value": "Microsoft.Storage/storageAccounts/blobServices/containers/blobs/write",
-				"scope": "subscription"
-			},
-			{
-				"value": "Microsoft.Storage/storageAccounts/blobServices/containers/blobs/read",
-				"scope": "subscription"
-			}
+    "DataActions": [
+      {
+        "value": "Microsoft.Storage/storageAccounts/blobServices/containers/blobs/delete",
+        "use_case": "Delete backup data blobs from the Rubrik cluster's backing storage container.",
+        "scope": "subscription"
+      },
+      {
+        "value": "Microsoft.Storage/storageAccounts/blobServices/containers/blobs/write",
+        "use_case": "Write backup data blobs into the Rubrik cluster's backing storage container.",
+        "scope": "subscription"
+      },
+      {
+        "value": "Microsoft.Storage/storageAccounts/blobServices/containers/blobs/read",
+        "use_case": "Read backup data blobs from the Rubrik cluster's backing storage container.",
+        "scope": "subscription"
+      }
     ],
-		"NotDataActions": null
+    "NotDataActions": null
   }
 ]

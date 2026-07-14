@@ -1,0 +1,30 @@
+[
+  {
+    "Actions": [
+      {
+        "value": "*/read",
+        "use_case": "Read resources metadata.",
+        "scope": "subscription"
+      },
+      {
+        "value": "Microsoft.Storage/storageAccounts/blobServices/generateUserDelegationKey/action",
+        "use_case": "Enabling AAD authentication for blob access.",
+        "scope": "subscription"
+      }
+    ],
+    "NotActions": null,
+    "DataActions": [
+      {
+        "value": "Microsoft.Storage/storageAccounts/blobServices/containers/blobs/read",
+        "use_case": "Storage Blobs scanning.",
+        "scope": "subscription"
+      },
+      {
+        "value": "Microsoft.Storage/storageAccounts/tableServices/tables/entities/read",
+        "use_case": "Storage Table scanning",
+        "scope": "subscription"
+      }
+    ],
+    "NotDataActions": null
+  }
+]

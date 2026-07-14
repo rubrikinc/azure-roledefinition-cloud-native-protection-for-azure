@@ -1,0 +1,109 @@
+[
+  {
+    "Actions": [
+      {
+        "value": "Microsoft.Sql/servers/databases/transparentDataEncryption/read",
+        "use_case": "Reading SQL DB TDE information.",
+        "scope": "subscription"
+      },
+      {
+        "value": "Microsoft.Sql/servers/databases/write",
+        "use_case": "Needed for running copy operation on source Database.",
+        "scope": "subscription"
+      },
+      {
+        "value": "Microsoft.Sql/servers/write",
+        "use_case": "Create server for DB copy operation.",
+        "scope": "resourceGroup"
+      },
+      {
+        "value": "Microsoft.Sql/servers/delete",
+        "use_case": "Delete server.",
+        "scope": "resourceGroup"
+      },
+      {
+        "value": "Microsoft.Sql/servers/databases/delete",
+        "use_case": "Delete copied database after backup is done",
+        "scope": "resourceGroup"
+      },
+      {
+        "value": "Microsoft.Sql/servers/privateEndpointConnectionsApproval/action",
+        "use_case": "Approve private endpoint connection on server if required.",
+        "scope": "resourceGroup"
+      },
+      {
+        "value": "Microsoft.Sql/servers/firewallRules/read",
+        "use_case": "Read firewall rules for the SQL server",
+        "scope": "resourceGroup"
+      },
+      {
+        "value": "Microsoft.Sql/servers/firewallRules/write",
+        "use_case": "Create firewall rules for the SQL server",
+        "scope": "resourceGroup"
+      },
+      {
+        "value": "Microsoft.Sql/servers/firewallRules/delete",
+        "use_case": "Delete firewall rules for the SQL server",
+        "scope": "resourceGroup"
+      },
+      {
+        "value": "Microsoft.Sql/servers/virtualNetworkRules/read",
+        "use_case": "Read virtual network rules for the SQL server",
+        "scope": "resourceGroup"
+      },
+      {
+        "value": "Microsoft.Sql/servers/virtualNetworkRules/write",
+        "use_case": "Create virtual network rules for the SQL server",
+        "scope": "resourceGroup"
+      },
+      {
+        "value": "Microsoft.Sql/servers/virtualNetworkRules/delete",
+        "use_case": "Delete virtual network rules for the SQL server",
+        "scope": "resourceGroup"
+      },
+      {
+        "value": "Microsoft.Sql/servers/privateEndpointConnections/read",
+        "use_case": "Read private endpoint connections for the SQL server",
+        "scope": "resourceGroup"
+      },
+      {
+        "value": "Microsoft.Sql/servers/encryptionProtector/read",
+        "use_case": "Check the current TDE encryption status and read which key is currently set as the active TDE protector on the server.",
+        "scope": "subscription"
+      },
+      {
+        "value": "Microsoft.ManagedIdentity/userAssignedIdentities/read",
+        "use_case": "Read the properties of the User-Assigned Managed Identity (UMI) before assigning it.",
+        "scope": "resourceGroup"
+      },
+      {
+        "value": "Microsoft.ManagedIdentity/userAssignedIdentities/assign/action",
+        "use_case": "Assign the UMI to the target Azure SQL server, giving it an identity to access Key Vault.",
+        "scope": "resourceGroup"
+      },
+      {
+        "value": "Microsoft.Sql/servers/keys/read",
+        "use_case": "List existing encryption key references registered on the SQL server.",
+        "scope": "resourceGroup"
+      },
+      {
+        "value": "Microsoft.Sql/servers/keys/write",
+        "use_case": "Add a new key reference (pointing to the Key Vault key) to the SQL server.",
+        "scope": "resourceGroup"
+      },
+      {
+        "value": "Microsoft.Sql/servers/keys/delete",
+        "use_case": "Remove old or obsolete key references from the SQL server.",
+        "scope": "resourceGroup"
+      },
+      {
+        "value": "Microsoft.Sql/servers/encryptionProtector/write",
+        "use_case": "Set (or activate) the specified Key Vault key as the server's TDE protector.",
+        "scope": "resourceGroup"
+      }
+    ],
+    "NotActions": null,
+    "DataActions": null,
+    "NotDataActions": null
+  }
+]

@@ -1,0 +1,39 @@
+[
+  {
+    "Actions": [
+      {
+        "value": "Microsoft.Network/virtualNetworks/subnets/joinViaServiceEndpoint/Action",
+        "use_case": "Join subnet to service endpoint.",
+        "scope": "resourceGroup"
+      },
+      {
+        "value": "Microsoft.Network/virtualNetworks/write",
+        "use_case": "Create virtual networks.",
+        "scope": "resourceGroup"
+      },
+      {
+        "value": "Microsoft.Network/networkSecurityGroups/write",
+        "use_case": "Create network security groups.",
+        "scope": "resourceGroup"
+      },
+      {
+        "value": "Microsoft.Network/networkSecurityGroups/join/action",
+        "use_case": "Join network security groups.",
+        "scope": "resourceGroup"
+      },
+      {
+        "value": "Microsoft.Network/routeTables/write",
+        "use_case": "Create route tables for internal traffic for managed instances.",
+        "scope": "resourceGroup"
+      },
+      {
+        "value": "Microsoft.Network/routeTables/join/action",
+        "use_case": "Join route tables.",
+        "scope": "resourceGroup"
+      }
+    ],
+    "NotActions": null,
+    "DataActions": null,
+    "NotDataActions": null
+  }
+]

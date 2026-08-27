@@ -1,0 +1,64 @@
+[
+  {
+    "Actions": [
+      {
+        "value": "Microsoft.DocumentDB/databaseAccounts/read",
+        "scope": "subscription",
+        "use_case": "Discovering Cosmos DB accounts and reading their properties."
+      },
+      {
+        "value": "Microsoft.DocumentDB/databaseAccounts/sqlDatabases/read",
+        "scope": "subscription",
+        "use_case": "Listing and reading SQL (Core) API databases in a Cosmos DB account."
+      },
+      {
+        "value": "Microsoft.DocumentDB/databaseAccounts/sqlDatabases/clientEncryptionKeys/read",
+        "scope": "subscription",
+        "use_case": "Reading client encryption keys used by Always Encrypted containers so backups capture encryption metadata."
+      },
+      {
+        "value": "Microsoft.DocumentDB/databaseAccounts/sqlDatabases/containers/read",
+        "scope": "subscription",
+        "use_case": "Listing and reading containers within a SQL database."
+      },
+      {
+        "value": "Microsoft.DocumentDB/databaseAccounts/sqlDatabases/containers/storedProcedures/read",
+        "scope": "subscription",
+        "use_case": "Reading stored procedures defined on a container so they are captured in the backup."
+      },
+      {
+        "value": "Microsoft.DocumentDB/databaseAccounts/sqlDatabases/containers/userDefinedFunctions/read",
+        "scope": "subscription",
+        "use_case": "Reading user-defined functions defined on a container so they are captured in the backup."
+      },
+      {
+        "value": "Microsoft.DocumentDB/databaseAccounts/sqlDatabases/containers/triggers/read",
+        "scope": "subscription",
+        "use_case": "Reading triggers defined on a container so they are captured in the backup."
+      },
+      {
+        "value": "Microsoft.DocumentDB/databaseAccounts/sqlDatabases/throughputSettings/read",
+        "scope": "subscription",
+        "use_case": "Reading database-level throughput (RU) settings to reproduce them on restore."
+      },
+      {
+        "value": "Microsoft.DocumentDB/databaseAccounts/sqlDatabases/containers/throughputSettings/read",
+        "scope": "subscription",
+        "use_case": "Reading container-level throughput (RU) settings to reproduce them on restore."
+      },
+      {
+        "value": "Microsoft.DocumentDB/databaseAccounts/sqlRoleAssignments/read",
+        "scope": "subscription",
+        "use_case": "Reading existing SQL role assignments for diagnostics and idempotent grants."
+      },
+      {
+        "value": "Microsoft.DocumentDB/databaseAccounts/sqlRoleAssignments/write",
+        "scope": "subscription",
+        "use_case": "Granting RSC the built-in Cosmos DB Data Reader role for data-plane backup access. Constrained by the subscription guardrail policy."
+      }
+    ],
+    "NotActions": null,
+    "DataActions": null,
+    "NotDataActions": null
+  }
+]

@@ -63,7 +63,7 @@
       },
       {
         "value": "Microsoft.DBforPostgreSQL/flexibleServers/read",
-        "use_case": "Retrieving the list of flexible servers or retrieving the properties for the specified flexible server.",
+        "use_case": "Required to list Postgres servers and read their properties.",
         "scope": "subscription"
       }
     ],

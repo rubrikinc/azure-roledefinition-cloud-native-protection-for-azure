@@ -1,0 +1,94 @@
+[
+  {
+    "Actions": [
+      {
+        "value": "Microsoft.Resources/subscriptions/resourceGroups/read",
+        "use_case": "Getting or listing resource groups.",
+        "scope": "subscription"
+      },
+      {
+        "value": "Microsoft.DBforPostgreSQL/flexibleServers/read",
+        "use_case": "Retrieving the list of flexible servers or retrieving the properties for the specified flexible server.",
+        "scope": "subscription"
+      },
+      {
+        "value": "Microsoft.DBforPostgreSQL/checkNameAvailability/action",
+        "use_case": "Checking if a flexible server name is available before provisioning.",
+        "scope": "subscription"
+      },
+      {
+        "value": "Microsoft.DBforPostgreSQL/flexibleServers/write",
+        "use_case": "Provisioning the temporary flexible server via point-in-time restore. Subscription scope is required because Azure runs a linked-authorization check for this action on the source server, which can be in any resource group in the subscription.",
+        "scope": "subscription"
+      },
+      {
+        "value": "Microsoft.DBforPostgreSQL/flexibleServers/delete",
+        "use_case": "Deleting the temporary flexible server after backup data extraction is complete.",
+        "scope": "resourceGroup"
+      },
+      {
+        "value": "Microsoft.DBforPostgreSQL/flexibleServers/firewallRules/read",
+        "use_case": "Retrieving the list of firewall rules for the specified flexible server.",
+        "scope": "resourceGroup"
+      },
+      {
+        "value": "Microsoft.DBforPostgreSQL/flexibleServers/firewallRules/write",
+        "use_case": "Creating firewall rules on the source server to allow Exocompute pod access when using public access.",
+        "scope": "resourceGroup"
+      },
+      {
+        "value": "Microsoft.DBforPostgreSQL/flexibleServers/firewallRules/delete",
+        "use_case": "Removing firewall rules from the server during teardown.",
+        "scope": "resourceGroup"
+      },
+      {
+        "value": "Microsoft.ManagedIdentity/userAssignedIdentities/read",
+        "use_case": "Read the properties of the User-Assigned Managed Identity (UMI) before assigning it.",
+        "scope": "resourceGroup"
+      },
+      {
+        "value": "Microsoft.ManagedIdentity/userAssignedIdentities/assign/action",
+        "use_case": "Assign the UMI to the target Azure Postgres flexible server, giving it an identity to access Key Vault.",
+        "scope": "resourceGroup"
+      },
+      {
+        "value": "Microsoft.Network/virtualNetworks/subnets/join/action",
+        "use_case": "Join the temporary export server NIC into the delegated subnet for a VNet-injected (private-access) source (Azure VNet-integration requirement).",
+        "scope": "subscription"
+      },
+      {
+        "value": "Microsoft.DBforPostgreSQL/flexibleServers/configurations/read",
+        "use_case": "Reading server configuration parameters (e.g. azure.extensions) on the source flexible server during backup. Subscription scope because the source server can be in any resource group in the subscription.",
+        "scope": "subscription"
+      },
+      {
+        "value": "Microsoft.DBforPostgreSQL/flexibleServers/configurations/write",
+        "use_case": "Setting server configuration parameters on the temporary flexible server -- allow-listing the pg_prewarm extension via azure.extensions so the backup warm-up can hydrate the restored disk.",
+        "scope": "resourceGroup"
+      },
+      {
+        "value": "Microsoft.Insights/metrics/read",
+        "use_case": "Reading the storage_used Azure Monitor metric on the source flexible server to report FETB used-bytes for cloud-native storage reporting. Subscription scope because the source server can be in any resource group in the subscription.",
+        "scope": "subscription"
+      },
+      {
+        "value": "Microsoft.DBforPostgreSQL/flexibleServers/administrators/write",
+        "use_case": "Registering the Rubrik service principal as a Microsoft Entra administrator on the temporary flexible server so backups authenticate with a short-lived Entra token instead of a generated password.",
+        "scope": "resourceGroup"
+      },
+      {
+        "value": "Microsoft.DBforPostgreSQL/flexibleServers/administrators/read",
+        "use_case": "Confirming that the Microsoft Entra administrator registration completed before the backup connects.",
+        "scope": "resourceGroup"
+      },
+      {
+        "value": "Microsoft.DBforPostgreSQL/flexibleServers/restart/action",
+        "use_case": "Restarting the temporary export server after writing the source server's shared_preload_libraries, which is PGC_POSTMASTER scope and takes effect only once the postmaster is cycled. Issued only when the source's list adds a library the temporary server does not already load.",
+        "scope": "resourceGroup"
+      }
+    ],
+    "NotActions": null,
+    "DataActions": null,
+    "NotDataActions": null
+  }
+]

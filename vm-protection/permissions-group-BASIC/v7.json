@@ -245,11 +245,10 @@
         "scope": "resourceGroup"
       },
       {
-					Value: "Microsoft.Compute/snapshots/download/action",
-					Scope: permissions.ResourceGroup,
-					UseCase: "Use to read managed disk snapshot data when Data " +
-						"Access Authentication mode is enabled on the snapshot.",
-			}
+		"value": "Microsoft.Compute/snapshots/download/action",
+        "use_case": "Use to read managed disk snapshot data when Data Access Authentication mode is enabled on the snapshot." 
+        "scope": "resourceGroup"
+	  }
     ],
     "NotDataActions": null
   }

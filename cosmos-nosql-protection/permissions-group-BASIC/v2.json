@@ -1,0 +1,89 @@
+[
+  {
+    "Actions": [
+      {
+        "value": "Microsoft.DocumentDB/databaseAccounts/read",
+        "scope": "subscription",
+        "use_case": "Discovering Cosmos DB accounts and reading their properties."
+      },
+      {
+        "value": "Microsoft.DocumentDB/databaseAccounts/sqlDatabases/read",
+        "scope": "subscription",
+        "use_case": "Listing and reading SQL (Core) API databases in a Cosmos DB account."
+      },
+      {
+        "value": "Microsoft.DocumentDB/databaseAccounts/sqlDatabases/clientEncryptionKeys/read",
+        "scope": "subscription",
+        "use_case": "Reading client encryption keys used by Always Encrypted containers so backups capture encryption metadata."
+      },
+      {
+        "value": "Microsoft.DocumentDB/databaseAccounts/sqlDatabases/containers/read",
+        "scope": "subscription",
+        "use_case": "Listing and reading containers within a SQL database."
+      },
+      {
+        "value": "Microsoft.DocumentDB/databaseAccounts/sqlDatabases/containers/storedProcedures/read",
+        "scope": "subscription",
+        "use_case": "Reading stored procedures defined on a container so they are captured in the backup."
+      },
+      {
+        "value": "Microsoft.DocumentDB/databaseAccounts/sqlDatabases/containers/userDefinedFunctions/read",
+        "scope": "subscription",
+        "use_case": "Reading user-defined functions defined on a container so they are captured in the backup."
+      },
+      {
+        "value": "Microsoft.DocumentDB/databaseAccounts/sqlDatabases/containers/triggers/read",
+        "scope": "subscription",
+        "use_case": "Reading triggers defined on a container so they are captured in the backup."
+      },
+      {
+        "value": "Microsoft.DocumentDB/databaseAccounts/sqlDatabases/throughputSettings/read",
+        "scope": "subscription",
+        "use_case": "Reading database-level throughput (RU) settings to reproduce them on restore."
+      },
+      {
+        "value": "Microsoft.DocumentDB/databaseAccounts/sqlDatabases/containers/throughputSettings/read",
+        "scope": "subscription",
+        "use_case": "Reading container-level throughput (RU) settings to reproduce them on restore."
+      },
+      {
+        "value": "Microsoft.DocumentDB/databaseAccounts/sqlRoleAssignments/read",
+        "scope": "subscription",
+        "use_case": "Reading existing SQL role assignments for diagnostics and idempotent grants."
+      },
+      {
+        "value": "Microsoft.DocumentDB/databaseAccounts/sqlRoleAssignments/write",
+        "scope": "subscription",
+        "use_case": "Granting RSC the built-in Cosmos DB Data Reader role for data-plane backup access. Constrained by the subscription guardrail policy."
+      },
+      {
+        "value": "Microsoft.DocumentDB/locations/restorableDatabaseAccounts/read",
+        "scope": "subscription",
+        "use_case": "Listing the restorable accounts and reading the restorable time range and regions of an account."
+      },
+      {
+        "value": "Microsoft.DocumentDB/locations/restorableDatabaseAccounts/*/read",
+        "scope": "subscription",
+        "use_case": "Listing the restorable databases and containers of an account and their create and delete events."
+      },
+      {
+        "value": "Microsoft.DocumentDB/databaseAccounts/sqlDatabases/containers/retrieveContinuousBackupInformation/action",
+        "scope": "subscription",
+        "use_case": "Reading the latest restorable time of a container for the point-in-time restore window."
+      },
+      {
+        "value": "Microsoft.DocumentDB/locations/operationsStatus/read",
+        "scope": "subscription",
+        "use_case": "Polling the long-running operation that reports the latest restorable time of a container."
+      },
+      {
+        "value": "Microsoft.DocumentDB/databaseAccountNames/read",
+        "scope": "subscription",
+        "use_case": "Checking whether the name of a new Cosmos DB account is still free before a restore to a new account."
+      }
+    ],
+    "NotActions": null,
+    "DataActions": null,
+    "NotDataActions": null
+  }
+]

@@ -1,0 +1,49 @@
+[
+  {
+    "Actions": [
+      {
+        "value": "Microsoft.DocumentDB/databaseAccounts/sqlDatabases/write",
+        "scope": "subscription",
+        "use_case": "Creating the destination database of a snapshot recovery when it does not exist, and restoring a deleted database in place."
+      },
+      {
+        "value": "Microsoft.DocumentDB/databaseAccounts/sqlDatabases/containers/write",
+        "scope": "subscription",
+        "use_case": "Creating the destination container of a snapshot recovery, and restoring a deleted container in place."
+      },
+      {
+        "value": "Microsoft.DocumentDB/databaseAccounts/sqlDatabases/containers/storedProcedures/write",
+        "scope": "subscription",
+        "use_case": "Restoring the stored procedures captured in the snapshot."
+      },
+      {
+        "value": "Microsoft.DocumentDB/databaseAccounts/sqlDatabases/containers/userDefinedFunctions/write",
+        "scope": "subscription",
+        "use_case": "Restoring the user-defined functions captured in the snapshot."
+      },
+      {
+        "value": "Microsoft.DocumentDB/databaseAccounts/sqlDatabases/containers/triggers/write",
+        "scope": "subscription",
+        "use_case": "Restoring the triggers captured in the snapshot."
+      },
+      {
+        "value": "Microsoft.DocumentDB/databaseAccounts/sqlDatabases/clientEncryptionKeys/write",
+        "scope": "subscription",
+        "use_case": "Restoring the client encryption keys an Always Encrypted container needs. A key that already exists with different key material is never overwritten."
+      },
+      {
+        "value": "Microsoft.DocumentDB/databaseAccounts/write",
+        "scope": "subscription",
+        "use_case": "Creating the new account of a point-in-time restore to a new account."
+      },
+      {
+        "value": "Microsoft.DocumentDB/locations/restorableDatabaseAccounts/restore/action",
+        "scope": "subscription",
+        "use_case": "Restoring from the continuous backup of an account, to a new account or in place."
+      }
+    ],
+    "NotActions": null,
+    "DataActions": null,
+    "NotDataActions": null
+  }
+]

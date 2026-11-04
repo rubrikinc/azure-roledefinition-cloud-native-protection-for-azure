@@ -1,0 +1,45 @@
+[
+  {
+    "Actions": [
+      {
+        "value": "Microsoft.Storage/storageAccounts/inventoryPolicies/read",
+        "use_case": "Use to read the Azure Blob Storage Inventory policy on the customer storage account so the scaled backup pipeline can verify the daily inventory rule is configured.",
+        "scope": "subscription"
+      },
+      {
+        "value": "Microsoft.Storage/storageAccounts/inventoryPolicies/write",
+        "use_case": "Use to create or update the Azure Blob Storage Inventory rule that emits the daily blob manifest consumed by the scaled Azure Blob backup pipeline.",
+        "scope": "subscription"
+      },
+      {
+        "value": "Microsoft.Storage/storageAccounts/inventoryPolicies/delete",
+        "use_case": "Use to delete the Azure Blob Storage Inventory rule on offboarding or when the scaled backup pipeline is disabled, so no stale inventory artifacts continue to be produced.",
+        "scope": "subscription"
+      },
+      {
+        "value": "Microsoft.Storage/storageAccounts/blobServices/containers/write",
+        "use_case": "Use to create the destination container that receives the daily Azure Blob Storage Inventory parquet manifest written by the inventory rule.",
+        "scope": "subscription"
+      },
+      {
+        "value": "Microsoft.Storage/storageAccounts/blobServices/containers/delete",
+        "use_case": "Use to delete the inventory destination container on offboarding or when the scaled backup pipeline is disabled.",
+        "scope": "subscription"
+      }
+    ],
+    "NotActions": null,
+    "DataActions": [
+      {
+        "value": "Microsoft.Storage/storageAccounts/blobServices/containers/blobs/write",
+        "use_case": "Use to write blobs into the inventory destination container (e.g. Exocompute-driven scaled writes). Restricted to the 'rubrik-inventory' container.",
+        "scope": "subscription"
+      },
+      {
+        "value": "Microsoft.Storage/storageAccounts/blobServices/containers/blobs/delete",
+        "use_case": "Use to delete blobs from the inventory destination container during cleanup or offboarding. Restricted to the 'rubrik-inventory' container.",
+        "scope": "subscription"
+      }
+    ],
+    "NotDataActions": null
+  }
+]

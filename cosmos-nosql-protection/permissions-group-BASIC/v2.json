@@ -67,14 +67,9 @@
         "use_case": "Listing the restorable databases and containers of an account and their create and delete events."
       },
       {
-        "value": "Microsoft.DocumentDB/databaseAccounts/sqlDatabases/containers/retrieveContinuousBackupInformation/action",
-        "scope": "subscription",
-        "use_case": "Reading the latest restorable time of a container for the point-in-time restore window."
-      },
-      {
         "value": "Microsoft.DocumentDB/locations/operationsStatus/read",
         "scope": "subscription",
-        "use_case": "Polling the long-running operation that reports the latest restorable time of a container."
+        "use_case": "Polling the status of long-running Cosmos DB operations, such as the restore of an account."
       },
       {
         "value": "Microsoft.DocumentDB/databaseAccountNames/read",
